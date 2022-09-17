@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/tmartinez88/My-Website/blob/main/assets/screenshot.png?raw=true" width="300" title="screenshot">
+  <img src="https://github.com/tmartinez88/My-Website/blob/main/assets/screenshot.png?raw=true" width="600" title="screenshot">
 </p>
 
 # Simple Website Repo
