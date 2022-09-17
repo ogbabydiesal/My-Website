@@ -11,6 +11,10 @@
 # production
 /build
 
+# fonts
+/public/fonts/Rosalind-TRIAL.otf
+/public/fonts/Tomasa-TRIAL.otf
+
 # misc
 .DS_Store
 .env.local
