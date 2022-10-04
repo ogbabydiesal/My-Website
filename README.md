@@ -5,7 +5,7 @@
 # Simple Website Repo
 I wanted to create a proto-typical artist page using React. By modernizing a basic design pattern in this way we get a new approach to static nav bars, dynamically loaded content, faster load times, and easier access to Web3 protocols. 
 
-The repo doesn't include licences to the Tomasa font designed by [Fernanda Cozzi](https://fercozzi.com/fonts/tomasa). 
+The repo doesn't include licences to the amazing Tomasa font designed by [Fernanda Cozzi](https://fercozzi.com/fonts/tomasa). 
 
 <p align="center">
   <img src="https://github.com/tmartinez88/My-Website/blob/main/assets/screenshotAnim.gif?raw=true" width="600" title="screenshot anim">
