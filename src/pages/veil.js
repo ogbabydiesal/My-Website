@@ -110,8 +110,6 @@ const Veil = () =>{
       <p>The environment with which I have chosen to program Veil, Max/MSP, was developed for the production of computer music and often used for poetic manipulation of data towards the synthesis of adventurous new sounds. The encryption applet provided in the programming resources with this paper allows you to generate new substitution ciphers with the click of a single button, making the encounter of harmonically interesting permutations of the frequency spectrum an easy and fast process.</p>
       <p>In my own practice, I use Veil to create compositions for guitar that blend the original instrumental source with its encrypted voice. This music I make has its basis in the tradition of ambient guitar music, though I insert discordant moments by disrupting the natural properties and balance of the instrument’s spectral qualities with the algorithm. Both the original source and encrypted voices are treated with additional processing such as filters, convolution reverb and delay, to accentuate and embellish the harmonic interplay between plain and encrypted sound.</p>
       <p>The development of structure in the compositions begin by first selecting a substitution sequence for the spectrum and by experimenting with motifs on the guitar that draw interesting tensions from the introduction of the encrypted sound. I then combine those motifs along with more improvisational and extended techniques to produce a recording of the piece. Along with the final digital artifact, I view the substitution cipher, saved as a text (.txt) file, both a byproduct of and “score” for the composition in its determination of how certain melodic devices are reordered in that particular playthrough.</p>
-
-
     </div>
   );
 }
