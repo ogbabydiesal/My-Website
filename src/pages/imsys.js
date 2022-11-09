@@ -2,7 +2,7 @@ import React from 'react';
 const Imsys = () =>{
   return (
     <div className = "main">
-      <br></br>
+      
       <img src={require('../images/imsys1.png')}/>
       <p>Imsys is a spectral spatialization tool.</p>
       <br></br>

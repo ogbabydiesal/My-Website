@@ -64,7 +64,7 @@ const Navbar= () =>{
     <Software>
     <List>
     <a className= "navvy2" onMouseEnter={() => setHoverDay(true)}
-        onMouseLeave={() => setHoverDay(false)} target="_blank" href="https://www.thomasjohnmartinez.com/daycycle">Day Cycle! </a>
+        onMouseLeave={() => setHoverDay(false)} target="_blank" href="https://www.thomasjohnmartinez.com/daycycle">Day Cycle</a>
       {inHoverDay ? <span className="greendot"></span> : <span className="graydot"></span> }
       
     </List>

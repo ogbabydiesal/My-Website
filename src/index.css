@@ -1,16 +1,12 @@
-@font-face {
-  font-family: "fantasyOG";
-  src: local("fantasyOG"),url(../public/fonts/FantasyOG.otf) format('opentype');
-}
 
-@font-face {
-  font-family: "rosalind";
-  src: local("rosalind"),url(../public/fonts/Rosalind-TRIAL.otf) format('opentype');
+.collapsible .content {
+  
+  
 }
-
-@font-face {
-  font-family: "tomasa";
-  src: local("tomasa"),url(../public/fonts/Tomasa-TRIAL.otf) format('opentype');
+.collapsible .header {
+  
+  
+  cursor: pointer;
 }
 
 table, th, td {
@@ -29,10 +25,12 @@ body, a {
   margin: 0;
   font-weight: 100;
   text-decoration: none;
+  color:black;
+  background-color:cornsilk;
 }
 
 .navLink {
-  font-family: 'fantasyOG';
+  
   font-weight:lighter;
 }
 
@@ -49,7 +47,6 @@ p{
 h1 {
   font-size: calc(4vw + 12px);
   font-family:fantasyOG;
-  font-style:oblique;
   text-shadow:3px 3px 13px black;
   color:black;
   margin-top:25px;
@@ -64,33 +61,17 @@ h2 {
   float:left;
   width:33%;
   height:100vh;
-  font-size: calc(5vw);
+  font-size: calc(3vw);
   padding-left: 25px;
   overflow-y:auto;
-  padding-top: 50px;
-  padding-bottom:50px;
-  font-family:tomasa;
+  
+  
+  font-family:'Times New Roman', Times, serif;
   color: black !important;
 }
 
-a.navvy2:visited {
+a.nav:visited {
   color:black;
-}
-.graydot {
-  height: calc(1.2vw);
-  width: calc(1.2vw);
-  margin-left:20px;
-  background-color:gainsboro;
-  border-radius: 50%;
-  display: inline-block;
-}
-.greendot {
-  height: calc(1.2vw);
-  width: calc(1.2vw);
-  margin-left:20px;
-  background-color:lime;
-  border-radius: 50%;
-  display: inline-block;
 }
 
 .main {
@@ -100,7 +81,7 @@ a.navvy2:visited {
   margin-left: 50px;
   padding-right:50px;
   overflow-y:auto;
-  padding-top:50px;
+  padding-top:25px;
 }
 
 img {
@@ -119,6 +100,10 @@ a:visited {
   color:blue;
 }
 
+link {
+  color:blue !important; 
+}
+
 a:hover {
   -webkit-transition: background-color 1.3s ease;
   -moz-transition: background-color 1.3s ease;
@@ -129,7 +114,7 @@ a:hover {
   -o-transition: font-size 1.3s ease;
   transition: background-color 1.3s ease;
   color:blue;
-  text-decoration: oblique;
+  
   cursor:cell;
 }
 
@@ -151,6 +136,7 @@ a:hover {
     font-size: calc(7vw);
     padding-left: 25px;
   } 
+  
   
   .main {  
     width:90%;
