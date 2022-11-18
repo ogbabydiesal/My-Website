@@ -82,7 +82,7 @@ const Navbar= () =>{
             </List>
 
             <List>
-              <a target="_blank" href="https://www.thomasjohnmartinez.com/fourfoldpaths">fourfold paths</a>
+              <a target="_blank" href="https://www.thomasjohnmartinez.com/septet-structure-a">Septet Structure - A</a>
             </List>
         </Software>
       </CollapseWeb>
