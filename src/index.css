@@ -1,11 +1,7 @@
 
 .collapsible .content {
-  
-  
 }
 .collapsible .header {
-  
-  
   cursor: pointer;
 }
 
@@ -23,14 +19,18 @@ mark{
 
 body, a {
   margin: 0;
-  font-weight: 100;
+  
   text-decoration: none;
   color:black;
-  background-color:cornsilk;
+  /*background-color:cornsilk;*/
+  background-color: whitesmoke;
 }
 
-.navLink {
+.header {
+  font-weight: 550;
   
+}
+.navLink {
   font-weight:lighter;
 }
 
@@ -42,6 +42,7 @@ p{
   font-weight:lighter;
   margin:0px;
   padding:0px;
+  padding-bottom:10px;
 }
 
 h1 {
@@ -61,48 +62,44 @@ h2 {
   float:left;
   width:33%;
   height:100vh;
-  font-size: calc(3vw);
-  padding-left: 25px;
+  font-size: calc(6vw);
+  padding-left: 0px;
   overflow-y:auto;
-  
-  
   font-family:'Times New Roman', Times, serif;
   color: black !important;
+  text-decoration: none;
 }
 
-a.nav:visited {
-  color:black;
+img {
+  width:80%;
 }
-
+.content {
+  
+}
 .main {
   float:left;
-  width:50%;
+  width:60%;
   height:100vh;
   margin-left: 50px;
-  padding-right:50px;
   overflow-y:auto;
   padding-top:25px;
 }
 
-img {
-  width:100% ;
-}
-
 li {
-  list-style-type: none;
+  list-style-type: none;  
 }
 
 a {
-  color:blue;
+  color:black;
+  font-weight:550;
+
 }
 
 a:visited {
-  color:blue;
+  color:black;
 }
 
-link {
-  color:blue !important; 
-}
+
 
 a:hover {
   -webkit-transition: background-color 1.3s ease;
@@ -114,8 +111,6 @@ a:hover {
   -o-transition: font-size 1.3s ease;
   transition: background-color 1.3s ease;
   color:blue;
-  
-  cursor:cell;
 }
 
 ::-webkit-scrollbar {
@@ -129,6 +124,14 @@ a:hover {
   box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 
+link {
+  color:blue; 
+}
+
+.nav:li {
+  text-decoration: none;;
+}
+
 @media (max-width: 1000px) {  
   .nav {
     width:100%;
@@ -140,7 +143,7 @@ a:hover {
   
   .main {  
     width:90%;
-    padding-left: 25px;
+    padding-left: 50px;
     margin-left: 0px;
     height:auto;
     top:auto;
@@ -148,6 +151,6 @@ a:hover {
     padding-top:0px;
   }
   p{
-    font-size: calc(5vw + 2px);   
+    font-size: calc(3vw + 2px);   
   }
 }

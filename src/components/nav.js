@@ -5,15 +5,18 @@ import useCollapse from "react-collapsed";
 
 const Software = styled.ul`
   padding:0px;
-  font-size: calc(1vw + 1px);
+  font-size: calc(2vw + 1px);
   color:black;
-  padding-left: 40px;
-  text-decoration: none;
+  padding-left: 20px;
+  
   margin:20px;
   margin-top:10px;
   font-style:none !important;
   @media (max-width: 1000px) {
-    font-size: calc(2vw + 1px);
+    font-size: calc(3vw + 1px);
+    padding-left: 0px;
+    margin-top: 10px;
+    
   }
 `;
 
@@ -78,6 +81,10 @@ const Navbar= () =>{
                  
             </List>
             <List>
+            <a target="_blank" href="https://thomasjohnmartinez.com/someclusters/">Some Clusters</a>
+                 
+            </List>
+            <List>
               <a target="_blank" href="https://www.thomasjohnmartinez.com/000roomsimulation">Room Sim</a>
             </List>
 
@@ -105,6 +112,12 @@ const Navbar= () =>{
         </List>
       </Software>
     </CollapseSoftware>
+    <li>
+        <Link to="/organizing">Organizing</Link>
+      </li>
+      <li>
+        <Link to="/systems">Systems</Link>
+      </li>
     <List>
         <a target = "_blank" href="https://github.com/tmartinez88">github</a>
     </List>
@@ -114,6 +127,7 @@ const Navbar= () =>{
     <List>
       <a target = "_blank" href="https://twitter.com/ogbabydiesal">twitter</a>
     </List> 
+    
     </ul>
   </nav>
   <Outlet />
