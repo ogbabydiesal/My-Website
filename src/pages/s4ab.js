@@ -27,7 +27,7 @@ const S4AB = () =>{
       <p><span style={{ fontWeight:'bold' }}>About Software for Artists Book series</span></p>
       <p>Driven by a desire to challenge existing frameworks and present creative alternatives, the Software for Artists Book series explores our complex and often slippery relationships with new technologies. Each book features the voices of critically engaged artists, researchers, writers, and organizers who are working at the forefront of the web, virtual embodiment, decentralized networks, AI, and beyond.</p>
       <p>Order the book <a target="_blank" href="https://pioneerworks.org/store/software-for-artists-book">here (currently out of stock)</a></p>
-      <p>Download the free PDF<a target="_blank" href="https://pioneerworks.org/store/software-for-artists-book">here (currently out of stock)</a></p>
+      <p>Download the free PDF<a target="_blank" href="https://pioneerworks.org/store/software-for-artists-book">here</a></p>
       <img className="photo" src={require('../images/S4AB_SPREADS_SQUARE2.png')}/>
     </Collapse>
       </>

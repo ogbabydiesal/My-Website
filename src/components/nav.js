@@ -81,15 +81,7 @@ const Navbar= () =>{
                  
             </List>
             <List>
-            <a target="_blank" href="https://thomasjohnmartinez.com/someclusters/">Some Clusters</a>
-                 
-            </List>
-            <List>
-              <a target="_blank" href="https://www.thomasjohnmartinez.com/000roomsimulation">Room Sim</a>
-            </List>
-
-            <List>
-              <a target="_blank" href="https://www.thomasjohnmartinez.com/septet-structure-a">Septet Structure - A</a>
+            <a target="_blank" href="https://thomasjohnmartinez.com/livingstreams/">Living Streams</a>           
             </List>
         </Software>
       </CollapseWeb>
