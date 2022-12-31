@@ -5,11 +5,7 @@ import S4AD7 from './s4ad7';
 const Organizing = () =>{
   return (
     <div className="main">
-      <p>Click to expand projects.</p>
       <div className='content'>
-        <br></br>
-        <br></br>
-        <br></br>
         <br></br>
         
         <S4AB2></S4AB2>

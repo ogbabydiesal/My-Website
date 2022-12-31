@@ -7,16 +7,13 @@ const Software = styled.ul`
   padding:0px;
   font-size: calc(2vw + 1px);
   color:black;
-  padding-left: 20px;
-  
-  margin:20px;
-  margin-top:10px;
-  font-style:none !important;
+  margin-top:-5px;
+  padding-bottom:5px;
+  padding-left: 10px;
+  font-style:normal;
   @media (max-width: 1000px) {
     font-size: calc(3vw + 1px);
-    padding-left: 0px;
-    margin-top: 10px;
-    
+    padding-left: 0px;    
   }
 `;
 
@@ -30,6 +27,7 @@ const Descrip = styled.p`
 
 const List = styled.li`
   color:black;
+  font-style:normal;
 `;
 
 function CollapseWeb(props) {
@@ -66,7 +64,7 @@ return (
 const Navbar= () =>{
   return (
     <>
-  <nav className='nav'>
+  <nav className='nav' >
     <ul>
       <li>
         <Link to="/">Welcome</Link>
@@ -78,7 +76,7 @@ const Navbar= () =>{
           <Software>
             <List>
             <a target="_blank" href="https://www.thomasjohnmartinez.com/daycycle">Day Cycle</a>
-                 
+ 
             </List>
             <List>
             <a target="_blank" href="https://thomasjohnmartinez.com/livingstreams/">Living Streams</a>           
