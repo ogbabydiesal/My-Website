@@ -6,7 +6,7 @@ function Collapse(props) {
   return (
     <div className="collapsible">
         <div className="header" {...getToggleProps()}>
-            {isExpanded ? 'Mindy Seu: Cyberfeminism Index (2022)' : 'Mindy Seu: Cyberfeminism Index (2022)'}
+            {isExpanded ? 'Augmented reality application Mindy Seu\'s: Cyberfeminism Index (2022)' : 'Augmented reality application Mindy Seu\'s: Cyberfeminism Index (2022)'}
         </div>
         <div {...getCollapseProps()}>
             <div className="content">
