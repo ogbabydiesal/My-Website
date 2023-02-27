@@ -2,7 +2,6 @@ import React from 'react';
 const RTLEARNER = () =>{
   return (
     <div className = "main">
-      <br></br>
       <img style = {{width:'50%'}} src={require('../images/RTLEARNER_PIC.png')}/>
       <br></br>
       <br></br>

@@ -5,8 +5,7 @@ import CFI from './seu-cfi';
 const Systems = () =>{
   return (
     <div className="main">
-      <br></br>
-      <p>Collaborative and Technological Consulting, Web Programming, Physical Computing and Systems Design. From 2010 to now.</p>
+      <h1>Collaborative and Technological Consulting, Web Programming, Physical Computing and Systems Design. From 2010 to now.</h1>
       <PUZZLE></PUZZLE>
       <CFI></CFI>
     </div>

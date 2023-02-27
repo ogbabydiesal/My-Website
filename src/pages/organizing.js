@@ -6,8 +6,6 @@ const Organizing = () =>{
   return (
     <div className="main">
       <div className='content'>
-        <br></br>
-        
         <S4AB2></S4AB2>
         <S4AB></S4AB>
         <S4AD7></S4AD7>

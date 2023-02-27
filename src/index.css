@@ -1,3 +1,4 @@
+html { -webkit-font-smoothing: antialiased; }
 @font-face {
   font-family: "cm";
   src: local("fantasyOG"),url(../src/fonts/cmunrm.woff) format('woff2');
@@ -5,8 +6,8 @@
 
 .collapsible .content {
   padding-top: 10px;
-  padding-left:15px;
-  padding-bottom:15px;
+  padding-left:10px;
+  padding-bottom:5px;
 }
 
 .collapsible .header {
@@ -20,33 +21,25 @@ table, th, td {
   text-align: center;
 }
 
-mark{
-  background-color:#e6ccff;
-  color:red;
-}
 .nav {
-  
   float:left;
   width:25%;
   height:100vh;
-  font-size: calc(3vw);
-  padding-left: 0px;
+  font-size: calc(2vw);
   overflow-y:auto;
-  font-family:'cm';
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   color:black;
-  text-shadow: 1px 1px 4px grey;
-  font-style:normal;
   text-transform: uppercase;  
 }
 body, a {
   margin: 0;
+  padding: 0;
   text-decoration: none;
   color:black;
-  
 }
+
 a {
   color:black;
-  font-weight:1550;
 }
 
 
@@ -54,13 +47,6 @@ a:visited {
   color:black;
 }
 
-.header {
-  font-weight: 550; 
-}
-
-.navLink {
-  font-weight:lighter;
-}
 .linky {
   font-style:oblique;
   text-decoration: underline;
@@ -69,23 +55,19 @@ a:visited {
 p{
   font-style:normal;
   font-family:"cm";
-  font: weight 100px;
   font-size: calc(1vw + 2px);
-  font-weight:lighter;
-  margin:0px;
-  padding:0px;
-  padding-bottom:10px;
-  
+  padding-bottom:0px;
 }
-
+h1 {
+  font-family:'cm';
+}
 h2 {
   font-size: calc(1vw + 3px);
 }
 nav {
+  background-color: greenyellow;
   font-style:normal;
-  
 }
-
 
 img {
   width:60%;  
@@ -95,15 +77,15 @@ img {
   float:left;
   width:70%;
   height:100vh;
-  margin-left: 50px;
+  margin-left: 0;
   overflow-y:auto;
-  padding-top:25px;
+  padding-top:20px;
   padding-right:10px;
+  padding-left:20px;
 }
 
 li {
   list-style-type: none;  
-  
 }
 
 a:hover {
@@ -129,27 +111,26 @@ a:hover {
   box-shadow: 0 0 1px rgba(255, 255, 255, 1.);
 }
 
-
-
 @media (max-width: 1000px) {  
   .nav {
     width:100%;
     height:auto;
     font-size: calc(4vw);
-    padding-left: 0px;  
+    padding-left: 0; 
+    margin-left:0; 
   } 
   
   .main {  
     width:90%;
-    padding-left: 10px;
+    padding-left: 20px;
     margin-left: 0px;
     height:auto;
     top:auto;
-    margin-top:0px;
-    padding-top:0px;
+    margin-top:10px;
+    padding-top:0;
   }
 
   p{
-    font-size: calc(2vw + 2px);   
+    font-size: calc(2vw + 8px);   
   }
 }

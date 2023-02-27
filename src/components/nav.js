@@ -5,14 +5,14 @@ import useCollapse from "react-collapsed";
 
 const Software = styled.ul`
   padding:0px;
-  font-size: calc(2vw + 1px);
+  font-size: calc(1vw + 1px);
   color:black;
   margin-top:-5px;
   padding-bottom:5px;
-  padding-left: 10px;
-  font-style:normal;
+  padding-left: 0px;
+  
   @media (max-width: 1000px) {
-    font-size: calc(3vw + 1px);
+    font-size: calc(2vw + 5px);
     padding-left: 0px;    
   }
 `;
@@ -27,7 +27,7 @@ const Descrip = styled.p`
 
 const List = styled.li`
   color:black;
-  font-style:normal;
+  
 `;
 
 function CollapseWeb(props) {
