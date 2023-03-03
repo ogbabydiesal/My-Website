@@ -12,7 +12,7 @@ import RTLEARNER from "./pages/rtlearner"
 import Devlog from "./pages/devlog"
 import Tripleperc from "./pages/tripleperc"
 import Timelayer from "./pages/timelayer"
-import Organizing from "./pages/organizing"
+import Curating from "./pages/curating"
 import Systems from "./pages/systems"
 import Logo from "./components/logo"
 function App() {
@@ -32,7 +32,7 @@ function App() {
             <Route path='/rtlearner' element={<RTLEARNER/>} />
             <Route path='/timelayer' element={<Timelayer/>} />
             <Route path='/software' element={<Software/>} />
-            <Route path='/organizing' element={<Organizing/>} />
+            <Route path='/curating' element={<Curating/>} />
             <Route path='/systems' element={<Systems/>} />
             <Route path='/devlog' element={<Devlog/>} />
           </Route>

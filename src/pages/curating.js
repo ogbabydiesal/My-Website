@@ -2,7 +2,7 @@ import React from 'react';
 import S4AB2 from './s4ab2';
 import S4AB from './s4ab';
 import S4AD7 from './s4ad7';
-const Organizing = () =>{
+const Curating = () =>{
   return (
     <div className="main">
       <div className='content'>
@@ -14,4 +14,4 @@ const Organizing = () =>{
     </div>
   );
 }
-export default Organizing;
+export default Curating;

@@ -76,7 +76,6 @@ const Navbar= () =>{
           <Software>
             <List>
             <a target="_blank" href="https://www.thomasjohnmartinez.com/daycycle">Day Cycle</a>
- 
             </List>
             <List>
             <a target="_blank" href="https://thomasjohnmartinez.com/livingstreams/">Living Streams</a>           
@@ -103,7 +102,7 @@ const Navbar= () =>{
       </Software>
     </CollapseSoftware>
     <li>
-        <Link to="/organizing">Organizing</Link>
+        <Link to="/curating">Curating</Link>
       </li>
       <li>
         <Link to="/systems">Systems</Link>
@@ -117,7 +116,6 @@ const Navbar= () =>{
     <List>
       <a target = "_blank" href="https://twitter.com/ogbabydiesal">twitter</a>
     </List> 
-    
     </ul>
   </nav>
   <Outlet />
