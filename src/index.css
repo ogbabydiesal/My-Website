@@ -6,8 +6,12 @@ html { -webkit-font-smoothing: antialiased; }
 
 .collapsible .content {
   padding-top: 10px;
-  padding-left:10px;
+  padding-left:20px;
   padding-bottom:5px;
+}
+
+.content {
+  padding-left:20px;
 }
 
 .collapsible .header {
@@ -94,6 +98,9 @@ li {
   margin-left:-20px;
 }
 
+.sys {
+  padding-left:20px;
+}
 
 a:hover {
   -webkit-transition: background-color 1.3s ease;

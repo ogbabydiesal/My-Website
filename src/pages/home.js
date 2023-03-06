@@ -2,7 +2,7 @@ import React from 'react';
 const Home = () =>{
   return (
     <div className="main">
-      <img src={require('../images/imsys1.png')}/>
+      <img  src={require('../images/blueBox.png')}/>
       <br></br>
       <br></br>
       <p>Hello, welcome to my website.</p>
