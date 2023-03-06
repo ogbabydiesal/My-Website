@@ -72,6 +72,9 @@ const Navbar= () =>{
       <li>
         <Link to="/music">Music</Link>
       </li>
+      <li>
+        <Link to="/sculpture">Sculpture</Link>
+      </li>
       <CollapseWeb>
           <Software>
             <List>

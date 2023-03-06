@@ -4,6 +4,7 @@ import useCollapse from 'react-collapsed';
 import Navbar from "./components/nav"
 import Home from "./pages/home"
 import Music from "./pages/music"
+import Sculpture from "./pages/sculpture"
 import Webwork from "./pages/webwork"
 import Software from "./pages/software"
 import Imsys from "./pages/imsys"
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<Navbar />}>
             <Route index element={<Home/>} />
             <Route path='/music' exact element={<Music/>} />
+            <Route path='/sculpture' element={<Sculpture/>} />
             <Route path='/webwork' element={<Webwork/>} />
             <Route path='/veil' element={<Veil/>} />
             <Route path='/imsys' element={<Imsys/>} />

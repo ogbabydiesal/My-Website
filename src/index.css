@@ -14,6 +14,10 @@ html { -webkit-font-smoothing: antialiased; }
   cursor: pointer;
 }
 
+.header {
+  margin-left:-20px;
+}
+
 table, th, td {
   border-collapse:collapse;
   border: 1px solid black;
@@ -86,7 +90,10 @@ img {
 
 li {
   list-style-type: none;  
+  padding-left:-100px;
+  margin-left:-20px;
 }
+
 
 a:hover {
   -webkit-transition: background-color 1.3s ease;
