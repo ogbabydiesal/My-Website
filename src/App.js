@@ -37,6 +37,8 @@ function App() {
             prose-h3:font-normal
             prose-h4:font-bold
             prose-h5:font-bold
+            prose-ul:list-none
+            prose-ul:pl-0
             prose-figcaption:text-black 
             prose-figure:mt-0
             prose-figure:flex
