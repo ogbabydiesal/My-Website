@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React, { Component }  from 'react';
 import useCollapse from 'react-collapsed';
-import Navbar from "./components/nav"
+import Navlinks from "./components/nav"
 import Home from "./pages/home"
 import Music from "./pages/music"
 import Sculpture from "./pages/sculpture"
@@ -19,13 +19,35 @@ import Systems from "./pages/systems"
 function App() {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
   return (
-    <>
-    
-      <Router>  
-        <Routes>
-          <Route path="/" element={<Navbar />}>
-            <Route index element={<Home/>} />
-            <Route path='/music' exact element={<Music/>} />
+    <div className="max-w-screen-2xl p-6 mx-auto grid grid-cols-12 gap-6">
+    <Router>
+      <nav className="col-span-12 lg:col-span-4">
+        <Navlinks />
+      </nav>
+      <main className="col-span-12 lg:col-span-8">
+        {/* calc function measures the height of the viewport and subtracts the height of vertical padding (2x) on desktop */}
+        <div className="wrapper lg:h-[calc(100vh-theme(space.12))]">
+          <div className="
+            font-serif 
+            text-black 
+            prose 
+            prose-lg 
+            prose-h1:font-normal
+            prose-h2:font-normal
+            prose-h3:font-normal
+            prose-h4:font-bold
+            prose-h5:font-bold
+            prose-figcaption:text-black 
+            prose-figure:mt-0
+            prose-figure:flex
+            prose-figure:flex-col
+            prose-figure:space-y-4
+            prose-video:aspect-video
+            prose-a:italic
+            hover:prose-a:text-blue">
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path='/music' element={<Music/>} />
             <Route path='/sculpture' element={<Sculpture/>} />
             <Route path='/webwork' element={<Webwork/>} />
             <Route path='/veil' element={<Veil/>} />
@@ -37,10 +59,12 @@ function App() {
             <Route path='/curating' element={<Curating/>} />
             <Route path='/systems' element={<Systems/>} />
             <Route path='/devlog' element={<Devlog/>} />
-          </Route>
-        </Routes>
-      </Router>
-    </>
+          </Routes>
+          </div>
+        </div>
+      </main>
+    </Router>
+    </div>
   );
 }
 export default App;

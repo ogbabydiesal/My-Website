@@ -5,11 +5,11 @@ function Collapse(props) {
     const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
   return (
     <div className="collapsible">
-        <div className="header" {...getToggleProps()}>
+        <h4 className="m-0 not-prose" {...getToggleProps()}>
             {isExpanded ? 'Software for Artists Day 7 (2022)' : 'Software for Artists Day 7 (2022)'}
-        </div>
+        </h4>
         <div {...getCollapseProps()}>
-            <div className="content">
+            <div className="my-6">
                 {props.children}
             </div>
         </div>
@@ -20,9 +20,11 @@ const S4AD7 = () =>{
   return (
    <>
    <Collapse>
-      <img className="photo" src={require('../images/s4ad-7.webp')}/>  
-      <p>Curated by myself and presented by <a className="linky" target="_blank" href="https://www.pioneerworks.org">Pioneer Works</a></p>   
-      <p>Design by Jesse Johanning</p>
+      <figure>
+        <img className="photo" src={require('../images/s4ad-7.webp')} alt="" />  
+        <figcaption>Design by Jesse Johanning</figcaption>
+      </figure>
+      <p>Curated by myself and presented by <a target="_blank" href="https://www.pioneerworks.org">Pioneer Works</a></p>   
       <p>Featuring presentations by LD Deutsch, Mindy Seu, Jace Clayton, Brian Droitcour, Steve Pikelny, Ruby Justice Thelot and Libby Marrs.</p>
     </Collapse>
       </>

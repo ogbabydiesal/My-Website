@@ -1,128 +1,129 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React from 'react';
 import { Outlet, Link } from "react-router-dom";
 import useCollapse from "react-collapsed";
 
-const Software = styled.ul`
-  
-  font-size: calc(1vw + 1px);
-  color:black;
-  margin-top:-5px;
- 
-  
-  
-  @media (max-width: 1000px) {
-    font-size: calc(2vw + 5px);
-    padding-left: 0px;    
-  }
-`;
-
-const Descrip = styled.p`
-  font-size: calc(2vw + 1px);
-  color:black;
-  margin-top:-10px;
-  margin-bottom:-10px;
-  float:center;
-`;
-
-const List = styled.li`
-  color:black;
-  
-`;
-
-function CollapseWeb(props) {
-  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
-return (
-  <div className="collapsible">
-      <div className="header" {...getToggleProps()}>
-          {isExpanded ? 'Web Based' : 'Web Based'}
-      </div>
-      <div {...getCollapseProps()}>
-          <div className="content">
-              {props.children}
-          </div>
-      </div>
-  </div>
-  );
-}
-function CollapseSoftware(props) {
-  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
-return (
-  <div className="collapsible">
-      <div className="header" {...getToggleProps()}>
-          {isExpanded ? 'Software' : 'Software'}
-      </div>
-      <div {...getCollapseProps()}>
-          <div className="content">
-              {props.children}
-          </div>
-      </div>
-  </div>
+function NavigationLink({ link }) {
+  return (
+    <li className="text-black hover:text-blue">
+      {link.isExternal ? (
+        <a target="_blank" rel="noreferrer" href={link.url}>{link.name}</a>
+      ) : (
+        <Link to={link.url}>{link.name}</Link>
+      )}
+    </li>
   );
 }
 
-const Navbar= () =>{
+function CollapseSection({ section }) {
+  const { getCollapseProps, getToggleProps } = useCollapse();
+  return (
+    <li className="collapsible">
+      <div {...getToggleProps()}>{section.title}</div>
+      <ul className="text-base lg:text-lg pl-4" {...getCollapseProps()}>
+        {section.links.map((link, index) => (
+            <NavigationLink key={index} link={link} />
+        ))}
+      </ul>
+    </li>
+  );
+}
+
+const Navlinks = () => {
+  const links = [
+    { 
+      name: "Welcome", 
+      url: "/" 
+    },
+    { 
+      name: "Music", 
+      url: "/music" 
+    },
+    { 
+      name: "Sculpture", 
+      url: "/sculpture" 
+    },
+    {
+      title: "Web Based",
+      isCollapsible: true,
+      links: [
+        { 
+          name: "Day Cycle", 
+          url: "https://www.thomasjohnmartinez.com/daycycle", 
+          isExternal: true 
+        },
+        { 
+          name: "Living Streams", 
+          url: "https://thomasjohnmartinez.com/livingstreams/", 
+          isExternal: true 
+        },
+      ]
+    },
+    {
+      title: "Software",
+      isCollapsible: true,
+      links: [
+        { 
+          name: "IMSYS", 
+          url: "/imsys"
+        },
+        { 
+          name: "Veil", 
+          url: "/veil" 
+        },
+        { 
+          name: "Triple Perc", 
+          url: "/tripleperc" 
+        },
+        { 
+          name: "RTLEARNER", 
+          url: "/rtlearner" 
+        },
+        { 
+          name: "Time Layer", 
+          url: "/timelayer" 
+        },
+      ]
+    },
+    { 
+      name: "Curating", 
+      url: "/curating" 
+    },
+    { 
+      name: "Systems", 
+      url: "/systems" 
+    },
+    { 
+      name: "github", 
+      url: "https://github.com/tmartinez88", 
+      isExternal: true 
+    },
+    { 
+      name: "instagram", 
+      url: "https://www.instagram.com/ogbabydiesal/", 
+      isExternal: true 
+    },
+    { 
+      name: "twitter", 
+      url: "https://twitter.com/ogbabydiesal", 
+      isExternal: true 
+    },
+  ];
+
   return (
     <>
-  <nav className='nav' >
-    <ul>
-      <li>
-        <Link to="/">Welcome</Link>
-      </li>
-      <li>
-        <Link to="/music">Music</Link>
-      </li>
-      <li>
-        <Link to="/sculpture">Sculpture</Link>
-      </li>
-      <CollapseWeb>
-          <Software>
-            <List>
-            <a target="_blank" href="https://www.thomasjohnmartinez.com/daycycle">Day Cycle</a>
-            </List>
-            <List>
-            <a target="_blank" href="https://thomasjohnmartinez.com/livingstreams/">Living Streams</a>           
-            </List>
-        </Software>
-      </CollapseWeb>
-    <CollapseSoftware>
-      <Software>
-        <List>
-            <Link to="/imsys">IMSYS</Link>  
-        </List>
-        <List>
-            <Link to="/veil">Veil</Link>  
-        </List>
-        <List>
-            <Link to="/tripleperc">Triple Perc</Link>  
-        </List>
-        <List>
-            <Link to="/rtlearner">RTLEARNER</Link> 
-        </List>
-        <List>
-            <Link to="/timelayer">Time Layer</Link>
-        </List>
-      </Software>
-    </CollapseSoftware>
-    <li>
-        <Link to="/curating">Curating</Link>
-      </li>
-      <li>
-        <Link to="/systems">Systems</Link>
-      </li>
-    <List>
-        <a target = "_blank" href="https://github.com/tmartinez88">github</a>
-    </List>
-    <List>
-      <a target = "_blank" href="https://www.instagram.com/ogbabydiesal/">instagram</a>
-    </List>
-    <List>
-      <a target = "_blank" href="https://twitter.com/ogbabydiesal">twitter</a>
-    </List> 
-    </ul>
-  </nav>
-  <Outlet />
-  </>
-  )
+      {/* calc function measures the height of the viewport and subtracts the height of vertical padding (2x) on desktop */}
+      <ul className="wrapper bg-lavender font-display uppercase leading-tight text-2xl lg:text-5xl lg:max-h-[calc(100vh-theme(space.12))]">
+        {links.map((link, index) => (
+          link.isCollapsible ? (
+            <CollapseSection key={index} section={link} />
+          ) : (
+            <NavigationLink key={index} link={link} />
+          )
+        ))}
+      </ul>
+      <Outlet />
+    </>
+  );
 };
-export default Navbar;
+
+export default Navlinks;
