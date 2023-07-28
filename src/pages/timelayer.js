@@ -2,6 +2,8 @@ import React from 'react';
 const Timelayer = () =>{
   return (
     <div className="main"> 
+    <div className='overflowMain'>
+      <p>Time Layer</p>
       <img src={require('../images/timeLayer.png')}/>
       <br></br>
       <br></br>
@@ -14,7 +16,7 @@ const Timelayer = () =>{
       <audio controls src={require('../sounds/daycycle.wav')}>
         
       </audio>
-      
+      </div>
     </div>
   );
 }

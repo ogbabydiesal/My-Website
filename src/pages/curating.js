@@ -5,11 +5,13 @@ import S4AD7 from './s4ad7';
 const Curating = () =>{
   return (
     <div className="main">
+      <div className='overflowMain'>
       <p>Past curatorial and organizing projects. Click for more info.</p>
       <div className='content'>
         <S4AB2></S4AB2>
         <S4AB></S4AB>
         <S4AD7></S4AD7>
+      </div>
       </div>
     </div>
   );

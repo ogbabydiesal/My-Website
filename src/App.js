@@ -15,7 +15,7 @@ import Tripleperc from "./pages/tripleperc"
 import Timelayer from "./pages/timelayer"
 import Curating from "./pages/curating"
 import Systems from "./pages/systems"
-import Logo from "./components/logo"
+
 function App() {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
   return (

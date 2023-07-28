@@ -1,7 +1,8 @@
 import React from 'react';
 const Tripleperc = () =>{
   return (
-    <div className="main"> 
+    <div className="main">
+      <div className='overflowMain'>
       <img src={require('../images/triplePercLarge.png')}/>
       <br></br>
       <br></br>
@@ -12,7 +13,7 @@ const Tripleperc = () =>{
       <audio controls src={require('../sounds/theempire.wav')}>
         
       </audio>
-      
+      </div>
     </div>
   );
 }

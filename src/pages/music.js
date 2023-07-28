@@ -2,6 +2,7 @@ import React from 'react';
 const Music = () =>{
   return (
     <div className = "main">
+      <div className = "overflowMain">
         <p>live set on <a className="linky" href="https://www.youtube.com/watch?v=H0iwGVKfe0k&ab_channel=DustRadio" target='_blank'> Dust</a></p>
         <img src={require('../images/dust.png')}/>
       <br></br>
@@ -18,8 +19,9 @@ const Music = () =>{
       <br></br>
       <div>
         <p>live performance at Performance Space New York</p>
-        <p>poster by Maxine</p>
+        <p>poster by Maxine De La Pozas</p>
         <img src={require('../images/220320TommySpannMano333.jpg')}/>
+      </div>
       </div>
     </div>
   );

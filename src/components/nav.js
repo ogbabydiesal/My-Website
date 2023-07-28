@@ -4,12 +4,12 @@ import { Outlet, Link } from "react-router-dom";
 import useCollapse from "react-collapsed";
 
 const Software = styled.ul`
-  padding:0px;
+  
   font-size: calc(1vw + 1px);
   color:black;
   margin-top:-5px;
-  padding-bottom:5px;
-  padding-left: 0px;
+ 
+  
   
   @media (max-width: 1000px) {
     font-size: calc(2vw + 5px);
@@ -35,7 +35,7 @@ function CollapseWeb(props) {
 return (
   <div className="collapsible">
       <div className="header" {...getToggleProps()}>
-          {isExpanded ? 'Web Work' : 'Web Work'}
+          {isExpanded ? 'Web Based' : 'Web Based'}
       </div>
       <div {...getCollapseProps()}>
           <div className="content">

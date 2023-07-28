@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
 const Software = styled.ul`
@@ -11,6 +11,9 @@ const Software = styled.ul`
   margin:20px;
   margin-top:10px;
   font-style:none !important;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
 `;
 
 const Descrip = styled.p`
@@ -66,7 +69,6 @@ const Navbar= () =>{
     <a className= "navvy2" onMouseEnter={() => setHoverDay(true)}
         onMouseLeave={() => setHoverDay(false)} target="_blank" href="https://www.thomasjohnmartinez.com/daycycle">Day Cycle</a>
       {inHoverDay ? <span className="greendot"></span> : <span className="graydot"></span> }
-      
     </List>
     <List>
       <a className= "navvy2" onMouseEnter={() => setHoverRoom(true)}
@@ -135,7 +137,6 @@ const Navbar= () =>{
       onMouseLeave={() => setHoverTwitter(false)} target = "_blank" href="https://twitter.com/ogbabydiesal">twitter</a>
       {inHoverTwitter ? <span className="greendot"></span> : <span className="graydot"></span>}
     </List>
-
   </div>
   );
 }

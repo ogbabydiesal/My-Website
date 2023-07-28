@@ -3,7 +3,6 @@ const Software = () =>{
   return (
     <div className="main">
       <p>select a software project from the nav</p>
-
     </div>
   );
 }
