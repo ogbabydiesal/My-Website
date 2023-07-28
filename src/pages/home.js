@@ -2,6 +2,7 @@ import React from 'react';
 const Home = () =>{
   return (
     <article>
+      <h1>Welcome</h1>
       <figure>
         <img src={require('../images/blueBox.png')} alt="" />
       </figure>
