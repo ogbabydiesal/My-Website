@@ -24,7 +24,7 @@ const S4AD7 = () =>{
         <img className="photo" src={require('../images/s4ad-7.webp')} alt="" />  
         <figcaption>Design by Jesse Johanning</figcaption>
       </figure>
-      <p>Curated by myself and presented by <a target="_blank" href="https://www.pioneerworks.org">Pioneer Works</a></p>   
+      <p>Curated by myself and presented by <a target="_blank" rel="noreferrer" href="https://www.pioneerworks.org">Pioneer Works</a></p>   
       <p>Featuring presentations by LD Deutsch, Mindy Seu, Jace Clayton, Brian Droitcour, Steve Pikelny, Ruby Justice Thelot and Libby Marrs.</p>
     </Collapse>
       </>

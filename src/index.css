@@ -19,16 +19,11 @@
 }
 
 @layer components {
-
-  .collapsible-project {
-    @apply font-bold;
-  }
-
   .wrapper {
-    @apply rounded-[35px] border border-black p-6 lg:p-8 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] overflow-y-scroll scrollbar scrollbar-thumb-scrollbar scrollbar-thin touch-auto;
+    @apply rounded-[35px] border border-black p-6 lg:p-8 overflow-y-scroll scrollbar scrollbar-thumb-gray scrollbar-thin touch-auto;
   }
 
-  /* .scroll {
-    @apply scrollbar scrollbar-thumb-scrollbar scrollbar-thin touch-auto;
-  } */
+  .shadows {
+    @apply lg:rounded-[35px] lg:overflow-hidden shadow-2xl;
+  }
 }

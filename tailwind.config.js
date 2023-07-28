@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     colors: {
       // Build your palette here
-      scrollbar:  'rgba(0, 0, 0, .2)',
+      gray:  'rgba(0, 0, 0, .2)',
       lavender:   '#e6e6fa',
       white:      '#ffffff',
       black:      '#000000',
