@@ -53,7 +53,7 @@ const Navlinks = () => {
         },
         { 
           name: "Living Streams", 
-          url: "https://thomasjohnmartinez.com/livingstreams/", 
+          url: "https://living-streams.vercel.app/", 
           isExternal: true 
         },
       ]
