@@ -48,7 +48,7 @@ const Navlinks = () => {
       links: [
         { 
           name: "Day Cycle", 
-          url: "https://www.thomasjohnmartinez.com/daycycle", 
+          url: "https://day-cycle.vercel.app/", 
           isExternal: true 
         },
         { 
