@@ -27,7 +27,7 @@ const Music = () =>{
         <h3>live performance at Performance Space New York</h3>
         <figure>
           <img src={require('../images/220320TommySpannMano333.jpg')} alt="" />
-          <figcaption>poster by Maxine De La Pozas</figcaption>
+          <figcaption>poster by Maxine de las Pozas</figcaption>
         </figure>
       </section>
     </article>
