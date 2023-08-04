@@ -14,6 +14,7 @@ import Tripleperc from "./pages/tripleperc"
 import Timelayer from "./pages/timelayer"
 import Curating from "./pages/curating"
 import Systems from "./pages/systems"
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -69,6 +70,7 @@ function App() {
         </main>
       </div>
     </Router>
+    <Analytics />
     </div>
   );
 }
