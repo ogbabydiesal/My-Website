@@ -28,7 +28,6 @@
   }
 
   .bg-roundy {
-    
     @apply rounded-[35px]
   }
 }

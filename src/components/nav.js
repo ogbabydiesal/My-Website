@@ -112,7 +112,7 @@ const Navlinks = () => {
   return (
     <>
       {/* calc function measures the height of the viewport and subtracts the height of vertical padding (2x) on desktop */}
-      <ul className="wrapper bg-lavender font-display uppercase leading-tight text-2xl lg:text-5xl lg:max-h-[calc(100vh-theme(space.12))]">
+      <ul className="wrapper bg-gray font-display uppercase leading-tight text-2xl lg:text-5xl lg:max-h-[calc(100vh-theme(space.12))]">
         {links.map((link, index) => (
           link.isCollapsible ? (
             <CollapseSection key={index} section={link} />
