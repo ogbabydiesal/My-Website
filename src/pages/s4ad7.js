@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useCollapse from "react-collapsed";
 
 function Collapse(props) {
-    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+  const [isExpanded, setExpanded] = useState(true);
+  const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded });
   return (
     <div className="collapsible">
-        <h4 className="m-0 not-prose" {...getToggleProps()}>
+        <h4 className="m-0 not-prose" {...getToggleProps({
+          onClick: () => setExpanded((prevExpanded) => !prevExpanded),
+        })}>
             {isExpanded ? 'Software for Artists Day 7 (2022)' : 'Software for Artists Day 7 (2022)'}
         </h4>
         <div {...getCollapseProps()}>
