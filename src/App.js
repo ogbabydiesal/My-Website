@@ -21,13 +21,13 @@ function App() {
     <div className="max-w-screen-2xl p-6 mx-auto grid grid-cols-12 gap-6">
     <Router>
       <div className="col-span-12 lg:col-span-4">
-        <nav className="shadows">
+        <nav className="bg-roundy shadows">
           <Navlinks />
         </nav>
       </div>
       <div className="col-span-12 lg:col-span-8">
         {/* Probably a better abstraction than 'shadows', but this adds an additional wraper with a border radius to fix the scrollbar overflow issue */}
-        <main className="shadows">
+        <main className="shadows bg-roundy">
           {/* calc function measures the height of the viewport and subtracts the height of vertical padding (2x) on desktop, see wrapper in index.css */}
           <div className="wrapper lg:h-[calc(100vh-theme(space.12))]">
             <div className="

@@ -26,4 +26,9 @@
   .shadows {
     @apply lg:rounded-[35px] lg:overflow-hidden shadow-2xl;
   }
+
+  .bg-roundy {
+    
+    @apply rounded-[35px]
+  }
 }
