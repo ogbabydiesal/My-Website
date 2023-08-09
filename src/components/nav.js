@@ -47,13 +47,13 @@ const Navlinks = () => {
       isCollapsible: true,
       links: [
         { 
-          name: "Day Cycle", 
-          url: "https://day-cycle.vercel.app/", 
+          name: "Living Streams", 
+          url: "https://living-streams.vercel.app/", 
           isExternal: true 
         },
         { 
-          name: "Living Streams", 
-          url: "https://living-streams.vercel.app/", 
+          name: "Day Cycle", 
+          url: "https://day-cycle.vercel.app/", 
           isExternal: true 
         },
         { 
