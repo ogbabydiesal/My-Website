@@ -56,6 +56,11 @@ const Navlinks = () => {
           url: "https://living-streams.vercel.app/", 
           isExternal: true 
         },
+        { 
+          name: "TV Party", 
+          url: "https://tv-party-719ff21bd2bc.herokuapp.com/", 
+          isExternal: true 
+        },
       ]
     },
     {

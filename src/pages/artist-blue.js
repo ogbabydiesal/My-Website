@@ -23,7 +23,7 @@ const BLUE = () =>{
   return (
    <>
    <Collapse>
-   <iframe src="https://player.vimeo.com/video/522982141?h=2cda0091d5&title=0&byline=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+   <iframe src="https://player.vimeo.com/video/522982141?h=2cda0091d5&title=0&byline=0" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       <p><a href="https://americanartist.us/works/im-blue" target='_blank' referrer='noreferrer'>Visit the Site</a></p>
       <p>I acted as a producer and lead technical artist for 'Blue Life Seminar.' I consulted on avatar design, mocap workflow, and animation. The piece was supported by a Pioneer Works Tech Residency which I facilitated during my tenure there.</p>
       <figure>

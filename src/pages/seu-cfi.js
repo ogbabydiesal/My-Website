@@ -23,7 +23,7 @@ const CFI = () =>{
   return (
   <>
     <Collapse>
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7VI57Zwf8QA?start=814" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/7VI57Zwf8QA?start=814" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <p><a href="https://tour.cyberfeminismindex.com/" target='_blank' referrer='noreferrer'>Visit the Site</a></p>
       <p>I worked with Mindy to create a desktop augmented reality application for live presentations of the Cyberfeminism Index. Performances with the application have been presented by New Museum with Rhizome (<a href="https://rhizome.org/editorial/2022/nov/30/the-power-of-spreadsheets-watch-the-cyberfeminism-index-book-launch/" target="_blank" referrer="noreferrer">documentation available here</a>), The Graham Foundation (<a href="https://youtu.be/5Nfd6Rah92E?t=1069" target="_blank" referrer="noreferrer">documentation available here</a>), and the Hammer Museum (<a href="https://channel.hammer.ucla.edu/video/1795/cyberfeminism-index-nora-khan-lauren-lee-mccarthy-mindy-seu" target="_blank" referrer="noreferrer">documentation available here</a>) among others.</p>
       <p>CYBERFEMINISM INDEX</p>
