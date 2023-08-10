@@ -58,7 +58,7 @@ const Navlinks = () => {
         },
         { 
           name: "TV Party", 
-          url: "https://tv-party-719ff21bd2bc.herokuapp.com/", 
+          url: "https://tvparty.pro/", 
           isExternal: true 
         },
       ]
