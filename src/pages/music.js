@@ -15,7 +15,7 @@ const Music = () =>{
       <iframe src="https://dev.ninaprotocol.com/embed/release/8y9QheM5iKGT8ka9z1ZrTzQuhRqXQL77q2kt4kAcu169" width="100%" height="450px" frameborder="0" />
       </section>
       <section>
-      <h3>original mix on <a href="https://www.mixcloud.com/otherdesertradi0/tommy-martinez-special-set-august-22-2022/" target="_blank" rel="noreferrer">Other Desert Radio</a>
+      <h3>original mix on <a href="https://www.mixcloud.com/otherdesertradio/tommy-martinez-special-set-august-22-2022/" target="_blank" rel="noreferrer">Other Desert Radio</a>
       </h3>
       <figure>
         <img src={require('../images/odr.jpg')} alt="" />
