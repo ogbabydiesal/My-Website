@@ -40,7 +40,7 @@ module.exports = {
         ['cm', 'sans-serif'],
       ],
       display: [
-        ['tomasa', 'serif'],
+        ['Tomasa', 'serif'],
       ],
     },
   },

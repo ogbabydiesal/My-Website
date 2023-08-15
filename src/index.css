@@ -9,8 +9,14 @@
   }
     
   @font-face {
-      font-family: "tomasa";
-      src: local("Tomasa-TRIAL"), url(../src/fonts/Tomasa-TRIAL.otf) format('opentype');
+    font-family: "Tomasa";
+    src: local("Tomasa"), url(../src/fonts/Tomasa-TRIAL.otf) format('opentype');
+    src:
+       url( ../src/fonts/Tomasa.woff2) format('woff2'), 
+       url( ../src/fonts/Tomasa.woff) format('woff'), 
+       url( ../src/fonts/Tomasa.ttf) format('truetype');
+    font-style: italic;
+    font-weight: 400;
   }
 
   html {
