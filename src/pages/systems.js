@@ -2,6 +2,7 @@ import React from 'react';
 import PUZZLE from './kuo-puzzle';
 import CFI from './seu-cfi';
 import BLUE from './artist-blue';
+import GOGGLES from './bennani-goggles';
 const Systems = () =>{
   return (
     <article>
@@ -11,6 +12,7 @@ const Systems = () =>{
         <li><PUZZLE/></li>
         <li><CFI/></li>
         <li><BLUE/></li>
+        <li><GOGGLES/></li>
       </ul>
     </article>
   );
