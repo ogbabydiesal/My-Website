@@ -3,6 +3,7 @@ import PUZZLE from './kuo-puzzle';
 import CFI from './seu-cfi';
 import BLUE from './artist-blue';
 import GOGGLES from './bennani-goggles';
+import MYTHICC from './syms-mythiccbeing';
 const Systems = () =>{
   return (
     <article>
@@ -13,6 +14,7 @@ const Systems = () =>{
         <li><CFI/></li>
         <li><BLUE/></li>
         <li><GOGGLES/></li>
+        <li><MYTHICC/></li>
       </ul>
     </article>
   );

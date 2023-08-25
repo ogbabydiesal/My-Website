@@ -12,7 +12,7 @@ module.exports = {
       white:      '#ffffff',
       black:      '#000000',
       blue:       '#0000ff',
-      'dark-blue': {
+      darkblue: {
         '50': '#f1f3ff',
         '100': '#e5e7ff',
         '200': '#ced1ff',
@@ -24,6 +24,19 @@ module.exports = {
         '800': '#1e04d2',
         '900': '#1b06ac',
         '950': '#0a0076',
+      },
+      'blue': {
+        '50': '#e8f0ff',
+        '100': '#d5e3ff',
+        '200': '#b3cbff',
+        '300': '#85a6ff',
+        '400': '#5673ff',
+        '500': '#2f41ff',
+        '600': '#0e0cff',
+        '700': '#0905ff',
+        '800': '#0606cd',
+        '900': '#10139f',
+        '950': '#0a0a5c',
       },
     },
     extend: {
@@ -42,6 +55,7 @@ module.exports = {
       display: [
         ['Tomasa', 'serif'], {
           fontFeatureSettings: '"ss01"',
+          
         },
       ],
     },

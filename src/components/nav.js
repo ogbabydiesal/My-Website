@@ -4,7 +4,7 @@ import useCollapse from "react-collapsed";
 
 function NavigationLink({ link }) {
   return (
-    <li className="text-black hover:text-blue">
+    <li className="text-black hover:text-blue ">
       {link.isExternal ? (
         <a target="_blank" rel="noreferrer" href={link.url}>{link.name}</a>
       ) : (

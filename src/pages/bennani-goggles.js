@@ -9,7 +9,7 @@ function Collapse(props) {
       <h4 className="m-0 not-prose" {...getToggleProps({
           onClick: () => setExpanded((prevExpanded) => !prevExpanded),
         })}>
-          {isExpanded ? 'Interaction Design and Programming for Meriem Bennani (2019)' : 'Interaction Design and Programming for Meriem Bennani (2019)'}
+          {isExpanded ? 'Meriem Bennani: Neighborhood Goggles (2019)' : 'Meriem Bennani: Neighborhood Goggles (2019)'}
       </h4>
       <div {...getCollapseProps()}>
         <div className="my-6">
@@ -23,6 +23,7 @@ const GOGGLES = () =>{
   return (
    <>
    <Collapse>
+    <p>Interaction Design, Physical Computing, Serial Communication, Multichannel Video, Max</p>
       <figure>
         <img src={require('../images/goggles.jpeg')} alt="" />  
       </figure>
