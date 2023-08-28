@@ -1,4 +1,7 @@
 import React from 'react';
+import MuxPlayer from "@mux/mux-player-react";
+
+
 const Sculpture = () =>{
   return (
     <article>
@@ -9,14 +12,21 @@ const Sculpture = () =>{
           <img src={require('../images/brownBox.png')} alt="" />
           <img src={require('../images/blueBox.png')} alt="" />
           <img src={require('../images/twoBoxes.png')} alt="" />
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/zT5sJkkmbbY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowFullScreen></iframe>
-          <figcaption>Glass, electronics, generative audio composition (2023)</figcaption>
+          <MuxPlayer
+            streamType="public"
+            playbackId="URswOkuqUupui019ntPKwLG881yc7ELpSScqydkpv6PY"
+            metadata={{
+            video_id: "video-id-54321",
+            video_title: "Test video title",
+            viewer_user_id: "user-id-007",
+          }}
+    />
+        <figcaption>Glass, electronics, generative audio composition (2023)</figcaption>
         </figure>
         </section>
         <section>
           <h3>Music Boxes (Blue)</h3>
           <figure>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Py3qcZE5zW0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowFullScreen></iframe>
             <figcaption>Glass, electronics, generative audio composition (2023)</figcaption>
           </figure>
         </section>

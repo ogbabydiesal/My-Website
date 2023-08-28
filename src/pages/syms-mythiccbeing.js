@@ -45,11 +45,6 @@ const MYTHICC = () =>{
       </figure>
       <figure>
         <div style={{ display: 'flex', justifyContent: 'left' }}>
-          <InstagramEmbed url="https://www.instagram.com/p/Bpfc0ofFroF/?img_index=1" width={328} />
-        </div>
-      </figure>
-      <figure>
-        <div style={{ display: 'flex', justifyContent: 'left' }}>
           <InstagramEmbed url="https://www.instagram.com/p/Bo7akJrhFqE/?img_index=2" width={328} />
         </div>
       </figure>
