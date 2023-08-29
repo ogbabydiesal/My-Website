@@ -15,6 +15,7 @@ const Sculpture = () =>{
           <MuxPlayer
             streamType="on-demand"
             primary-color="limegreen"
+            title= "Duo"
             playbackId="URswOkuqUupui019ntPKwLG881yc7ELpSScqydkpv6PY"
             metadata={{
             video_id: "video-id-54321",
@@ -25,6 +26,7 @@ const Sculpture = () =>{
           <MuxPlayer
               streamType="on-demand"
               primary-color="limegreen"
+              title= "Detail of music boxes"
               playbackId="UP6zabBy0100dcotzVnZsdIdK01smNt5MIa8UZ01QnvDQWg"
               metadata={{
               video_id: "video-id-54321",
@@ -38,6 +40,7 @@ const Sculpture = () =>{
             <MuxPlayer
               streamType="on-demand"
               primary-color="limegreen"
+              title= "Ayano's Chime"
               playbackId="vp4n4U9OcGFXzVsVRkVSGcok2O4bbda8M7kcQJHHBu00"
               metadata={{
               video_id: "video-id-54321",
@@ -48,6 +51,7 @@ const Sculpture = () =>{
             <MuxPlayer
               streamType="on-demand"
               primary-color="limegreen"
+              title= "Gift for Kevin"
               playbackId="XPbPJz46AmqD68tvKCxs6rRydJZqtvp6TbtinW3buco"
               metadata={{
               video_id: "video-id-54321",
@@ -58,10 +62,11 @@ const Sculpture = () =>{
             <MuxPlayer
               streamType="on-demand"
               primary-color="limegreen"
+              title= "Gepetto's Hand"
               playbackId="XhA5B5e9TvDMqh00rl01D1Qmu1FG02BCrIG02BYfzi4Z7z4"
               metadata={{
               video_id: "video-id-54321",
-              video_title: "Test video title",
+              video_title: "Gepetto's Chime",
               viewer_user_id: "user-id-007",
               
             }}
