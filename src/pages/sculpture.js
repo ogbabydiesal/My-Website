@@ -7,7 +7,7 @@ const Sculpture = () =>{
     <article>
         <h1>Sculpture</h1>
         <section>
-        <h3>Music Boxes (Brown)</h3>
+        <h3>Music Boxes (2022). Stained Spectrum glass, custom electronics, generative music composition.</h3>
         <figure>
           <img src={require('../images/brownBox.png')} alt="" />
           <img src={require('../images/blueBox.png')} alt="" />
@@ -20,14 +20,46 @@ const Sculpture = () =>{
             video_title: "Test video title",
             viewer_user_id: "user-id-007",
           }}
-    />
-        <figcaption>Glass, electronics, generative audio composition (2023)</figcaption>
-        </figure>
-        </section>
-        <section>
-          <h3>Music Boxes (Blue)</h3>
+          />
+          <MuxPlayer
+              streamType="public"
+              playbackId="UP6zabBy0100dcotzVnZsdIdK01smNt5MIa8UZ01QnvDQWg"
+              metadata={{
+              video_id: "video-id-54321",
+              video_title: "Test video title",
+              viewer_user_id: "user-id-007",
+            }}
+            />
+          </figure>
+          <h3>Chimes (2023)</h3>
           <figure>
-            <figcaption>Glass, electronics, generative audio composition (2023)</figcaption>
+            <MuxPlayer
+              streamType="public"
+              playbackId="vp4n4U9OcGFXzVsVRkVSGcok2O4bbda8M7kcQJHHBu00"
+              metadata={{
+              video_id: "video-id-54321",
+              video_title: "Test video title",
+              viewer_user_id: "user-id-007",
+            }}
+            />
+            <MuxPlayer
+              streamType="public"
+              playbackId="XPbPJz46AmqD68tvKCxs6rRydJZqtvp6TbtinW3buco"
+              metadata={{
+              video_id: "video-id-54321",
+              video_title: "Test video title",
+              viewer_user_id: "user-id-007",
+            }}
+            />
+            <MuxPlayer
+              streamType="public"
+              playbackId="XhA5B5e9TvDMqh00rl01D1Qmu1FG02BCrIG02BYfzi4Z7z4"
+              metadata={{
+              video_id: "video-id-54321",
+              video_title: "Test video title",
+              viewer_user_id: "user-id-007",
+            }}
+            />
           </figure>
         </section>
     </article>
