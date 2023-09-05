@@ -65,6 +65,7 @@ const MYTHICC = () =>{
         <li><a href="https://artfacts.net/exhibition/martine-syms-big-surprise/905195" target="_blank" referrer="noreferrer">Art Facts</a></li>
       </ul>
     </Collapse>
+    <br></br>
     </>
   );
 }

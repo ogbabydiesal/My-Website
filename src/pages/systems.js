@@ -4,6 +4,8 @@ import CFI from './seu-cfi';
 import BLUE from './artist-blue';
 import GOGGLES from './bennani-goggles';
 import MYTHICC from './syms-mythiccbeing';
+import BLOBS from './meisenberg-blobs';
+
 const Systems = () =>{
   return (
     <article>

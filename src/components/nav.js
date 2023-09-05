@@ -17,7 +17,7 @@ function NavigationLink({ link }) {
 function CollapseSection({ section }) {
   const { getCollapseProps, getToggleProps } = useCollapse();
   return (
-    <li className="collapsible">
+    <li activeClassName="active" inactiveClassName="inactive" className="collapsible">
       <div {...getToggleProps()}>{section.title}</div>
       <ul className="text-base lg:text-lg pl-4" {...getCollapseProps()}>
         {section.links.map((link, index) => (

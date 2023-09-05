@@ -20,6 +20,9 @@
     --seek-backward-button:none;
     --seek-forward-button:none;
   }
+
+
+  
 }
 
 @layer components {
