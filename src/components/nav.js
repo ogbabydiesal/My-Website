@@ -61,6 +61,11 @@ const Navlinks = () => {
           url: "https://tvparty.pro/", 
           isExternal: true 
         },
+        { 
+          name: "HTML Speed Study", 
+          url: "https://html-speed-study.glitch.me/", 
+          isExternal: true 
+        },
       ]
     },
     {
