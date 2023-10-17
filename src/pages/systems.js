@@ -5,7 +5,6 @@ import BLUE from './artist-blue';
 import GOGGLES from './bennani-goggles';
 import MYTHICC from './syms-mythiccbeing';
 import BLOBS from './meisenberg-blobs';
-import VOMITORIUM from './vomitorium';
 
 const Systems = () =>{
   return (
@@ -19,7 +18,6 @@ const Systems = () =>{
         <li><GOGGLES/></li>
         <li><MYTHICC/></li>
         <li><BLOBS/></li>
-        
       </ul>
     </article>
   );
