@@ -37,4 +37,21 @@
   .bg-roundy {
     @apply rounded-[35px]
   }
+  .modal {
+    display: block;
+    padding:20px;
+    position:absolute;
+    border-radius: 35px;
+    width: 75%;
+    height:80%;
+    top: 25px;
+    bottom: 70px;
+    overflow-y: auto;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(226, 11, 11), transparent 90%);
+  }
+  
 }
