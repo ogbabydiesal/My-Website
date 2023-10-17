@@ -23,19 +23,39 @@ const BLOBS = () =>{
   return (
    <>
    <Collapse>
-   <p>Web Programming, Canvas API, Tiling Algorithm, Git, Generative</p>
+   <p>3D programming for a realtime 2-channel simulation in Max/MSP Jitter for Florian Meisenberg at Simone Subal. The piece connects to open 3D model databases on the web and downloads objects at random, then renders them in the animation.</p>
       <figure>
-        <img src={require('../images/puzzle.png')} alt=""/>  
+        <img src={require('../images/delivery1.jpeg')} alt=""/>  
+      </figure>
+      <figure>
+        <img src={require('../images/delivery2.jpeg')} alt=""/>  
+      </figure>
+      <figure>
+        <img src={require('../images/delivery3.jpeg')} alt=""/>  
+      </figure>
+      <figure>
+        <img src={require('../images/delivery4.jpeg')} alt=""/>  
+      </figure>
+      <figure>
+        <img src={require('../images/delivery5.webp')} alt=""/>  
+      </figure>
+      <figure>
+        <img src={require('../images/delivery6.webp')} alt=""/>  
+      </figure>
+      <figure>
+        <img src={require('../images/delivery7.webp')} alt=""/>  
       </figure>
       
-      <p><a href="https://taroface.github.io/puzzle/" target='_blank' referrer='no-referrer'>View the work here</a>.</p>
-      <p>Below text from the <a href="https://www.mplus.org.hk/en/exhibitions/puzzle-ryan-kuo/" target="_blank" referrer="norefferer">M+ website</a>.</p>
+      <p><a href="https://simonesubal.com/exhibitions/florian-meisenberg-delivery" target='_blank' referrer='no-referrer'>View the work here</a>.</p>
       <iframe src="https://player.vimeo.com/video/121201368?h=bece6ee2fd" width="640" height="337" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       <p><a href="https://vimeo.com/121201368">Delivery to the following recipients failed permanently (I used to be with it, but then they changed what &lsquo;it&rsquo; was, and...</a> from <a href="https://vimeo.com/florianmeisenberg">Florian Meisenberg</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-      <p className='italic'>Puzzle is a new work commissioned by M+. It is a program that places interlocking graphical tiles, accompanied by circular dialogues, endlessly in a browser. The work is intrinsically bilingual and its single interactive feature is a language toggle that permits different views of the situation. The situation travels forward and backward in time, accumulating a picture that enables one to glimpse the forces that govern certain beliefs and breakdowns.</p>   
-      <p className='italic'>Inspired by role-playing video games, Ryan Kuo’s Puzzle rebuilds conversations from his personal history as a first-generation Taiwanese American growing up in rural America. In looping, disembodied encounters, themes of diaspora emerge. Chinese values such as Confucian patriarchy and filial piety encounter American idealism and self-preservation. Instead of viewing these as opposing forces, Kuo attempts to piece them together across the barriers of memory and language.</p>
-      <p className='italic'>Puzzle is durational and is intended for desktop and even larger displays.</p>
-      <p className='italic'>The work was co-curated by Kate Gu and Kerry Doran. Translation by Yuling Zhong. Web development by Tommy Martinez.</p>
+      <p>Press</p>
+      <ul>
+        <li><a href="https://www.artforum.com/events/florian-meisenberg-210294/">Artforum</a></li>
+        <li><a href="https://pioneerworks.org/broadcast/password-protected-florian-meisenberg">Pioneer Works</a></li>
+        <li><a href="./docs/FM-ArtInfo-March-2015.pdf" target="_blank">Art Info</a></li>
+        <li><a href="https://pioneerworks.org/broadcast/password-protected-florian-meisenberg">Artforum</a></li>
+      </ul>
     </Collapse>
     </>
   );
