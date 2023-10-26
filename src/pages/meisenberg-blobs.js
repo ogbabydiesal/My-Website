@@ -1,29 +1,11 @@
 import React, { useState } from 'react';
-import useCollapse from "react-collapsed";
 
-function Collapse(props) {
-  const [isExpanded, setExpanded] = useState(true);
-  const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded });
+export default function BLOBS({ onClose }) {
   return (
-    <div className="collapsible">
-      <h4 className="m-0 not-prose" {...getToggleProps({
-          onClick: () => setExpanded((prevExpanded) => !prevExpanded),
-        })}>
-          {isExpanded ? 'Florian Meisenberg: Delivery to the Following Recipients Failed Permanently (2015)' : 'Florian Meisenberg: Delivery to the Following Recipients Failed Permanently (2015)'}
-      </h4>
-      <div {...getCollapseProps()}>
-        <div className="my-6">
-            {props.children}
-        </div>
-      </div>
-    </div>
-    );
-  }
-const BLOBS = () =>{
-  return (
-   <>
-   <Collapse>
-   <p>3D programming for a realtime 2-channel simulation in Max/MSP Jitter for Florian Meisenberg at Simone Subal. The piece connects to open 3D model databases on the web and downloads objects at random, then renders them in the animation.</p>
+    <div class = "modal">
+      <div>
+      <button class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900" onClick={onClose}>Close</button>
+      <p>3D programming for a realtime 2-channel simulation in Max/MSP Jitter for Florian Meisenberg at Simone Subal. The piece connects to open 3D model databases on the web and downloads objects at random, then renders them in the animation.</p>
       <figure>
         <img src={require('../images/delivery1.jpeg')} alt=""/>  
       </figure>
@@ -56,8 +38,8 @@ const BLOBS = () =>{
         <li><a href="./docs/FM-ArtInfo-March-2015.pdf" target="_blank">Art Info</a></li>
         <li><a href="https://pioneerworks.org/broadcast/password-protected-florian-meisenberg">Artforum</a></li>
       </ul>
-    </Collapse>
-    </>
+      </div>
+    </div>
   );
 }
-export default BLOBS;
+
