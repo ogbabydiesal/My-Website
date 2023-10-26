@@ -66,6 +66,11 @@ const Navlinks = () => {
           url: "https://html-speed-study.glitch.me/", 
           isExternal: true 
         },
+        { 
+          name: "Behavioralist", 
+          url: "https://behavioralist.vercel.app/", 
+          isExternal: true 
+        },
       ]
     },
     {
