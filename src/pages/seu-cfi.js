@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import ModalButton from './modal-button';
 
 export default function CFI({ onClose }) {
   return (
     <div class="modal">
       <div>
-      <button class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900" onClick={onClose}>Close</button>
+        <ModalButton state = { onClose }/>
       </div>
+      
       <p>Unity, Augmented Reality, Video, Performance</p>
       <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/7VI57Zwf8QA?start=814" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <p><a href="https://tour.cyberfeminismindex.com/" target='_blank' referrer='noreferrer'>Visit the Site</a></p>
