@@ -71,6 +71,12 @@ const Navlinks = () => {
           url: "https://behavioralist.vercel.app/", 
           isExternal: true 
         },
+        { 
+          name: "Mesh of Echoes", 
+          url: "https://meshofechoes.com/", 
+          isExternal: true 
+        },
+        
       ]
     },
     {
