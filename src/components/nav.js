@@ -115,7 +115,7 @@ const Navlinks = () => {
     },
     { 
       name: "github", 
-      url: "https://github.com/tmartinez88", 
+      url: "https://github.com/ogbabydiesal", 
       isExternal: true 
     },
     { 
