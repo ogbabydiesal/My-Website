@@ -49,7 +49,7 @@ function App() {
               prose-figure:space-y-4
               prose-video:aspect-video
               prose-a:italic
-              hover:prose-a:text-blue">
+              hover:prose-a:text-blue" style={{maxWidth: 'none'}}>
             <Routes>
               <Route path="/" element={<Home/>} />
               <Route path='/music' element={<Music/>} />
