@@ -1,10 +1,19 @@
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config();
+const path = require('path');
+//require('dotenv').config();
 
-// google sheets api key
+// google sheets api key is in the root .env file
+
+// Load .env from the project root (one level up from server/)
+require('dotenv').config({ path: path.resolve(__dirname, '..', '.env') });
+
 const API_KEY = process.env.API_KEY;
 const SHEET_ID = process.env.SHEET_ID;
+
+if (!API_KEY || !SHEET_ID) {
+  console.warn('Warning: API_KEY or SHEET_ID not found in root .env');
+}
 
 const app = express();
 const PORT = process.env.PORT || 8000; // Use a different port than your React app
