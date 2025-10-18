@@ -24,7 +24,6 @@ const Music = () => {
 
   return (
     <article>
-      <h1>Work</h1>
       <div id='workContainer'>
       {work.map((item, index) => (
         <section key={index} className='workItem'>
