@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React  from 'react';
 import Navlinks from "./components/nav"
 import Home from "./pages/home"
-import Music from "./pages/music"
+import Works from "./pages/work"
 import Sculpture from "./pages/sculpture"
 import Webwork from "./pages/webwork"
 import Software from "./pages/software"
@@ -52,7 +52,7 @@ function App() {
               hover:prose-a:text-blue" style={{maxWidth: 'none'}}>
             <Routes>
               <Route path="/" element={<Home/>} />
-              <Route path='/music' element={<Music/>} />
+              <Route path='/work' element={<Works/>} />
               <Route path='/sculpture' element={<Sculpture/>} />
               <Route path='/webwork' element={<Webwork/>} />
               <Route path='/veil' element={<Veil/>} />

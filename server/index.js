@@ -59,10 +59,10 @@ app.get('/api/work', async (req, res) => {
       iframe: row[3] || '',
       date: row[4] || '',
     }));
-    console.log('Fetched work items:', work);
+    //console.log('Fetched work items:', work);
     res.json({ work });
   } catch (error) {
-    console.error('Error fetching sheet:', error);
+    //console.error('Error fetching sheet:', error);
     res.status(500).json({ error: error.message });
   }
 });
@@ -72,5 +72,5 @@ app.get('/api/message', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  //console.log(`Server is running on http://localhost:${PORT}`);
 });
