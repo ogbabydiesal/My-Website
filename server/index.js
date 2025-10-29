@@ -38,7 +38,7 @@ app.get('/api/work', async (req, res) => {
     const lastRow = gridProperties.rowCount; // Total rows in sheet
 
     // Fetch all data from row 2 to the last row dynamically
-    const range = `Sheet1!A2:D${lastRow}`;
+    const range = `Sheet1!A2:G${lastRow}`;
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${range}?key=${API_KEY}`;
     
     const response = await fetch(url);
@@ -51,18 +51,16 @@ app.get('/api/work', async (req, res) => {
 
     const rows = data.values || [];
 
-    // Convert rows to objects
     const work = rows.map((row) => ({
       title: row[0] || '',
       imageUrl: row[1] || '',
-      description: row[2] || '',
-      iframe: row[3] || '',
+      short_description: row[2] || '',
+      long_description: row[3] || '',
       date: row[4] || '',
+      tags: row[6] ? row[6].split(',').map(tag => tag.trim()) : [],
     }));
-    //console.log('Fetched work items:', work);
     res.json({ work });
   } catch (error) {
-    //console.error('Error fetching sheet:', error);
     res.status(500).json({ error: error.message });
   }
 });

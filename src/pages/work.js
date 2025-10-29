@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Modal from '../components/modal';
 
 const Works = () => {
@@ -26,22 +26,49 @@ const Works = () => {
   if (error) return <p>Error: {error}</p>;
 
   const handleTileClick = (item, event) => {
-    console.log('Clicked item:', item);
     setSelectedItem(item);
     setIsModalOpen(true);
   };
 
+   const allTags = [];
+  work.forEach(item => {
+    item.tags.forEach(tag => {
+      if (!allTags.includes(tag)) {
+        allTags.push(tag);
+      }
+    });
+  });
+
   return (
     <>
     <article>
+      <div className='tags'>
+        <span>Filter by Tag: </span>
+        { allTags.map(tag => (
+            <button key={tag} className="tag-button" onClick={() => {
+              const container = document.getElementById('workContainer');
+              const items = container.getElementsByClassName('workItem');
+              for (let i = 0; i < items.length; i++) {
+                const item = items[i];
+                if (tag === 'All' || item.classList.contains(tag)) {
+                  item.style.display = 'block';
+                } else {
+                  item.style.display = 'none';
+                }
+              }
+            }}>
+              {tag}
+            </button>
+          ))}
+      </div>
       <div id='workContainer'>
       {work.map((item, index) => (
-        <section key={index} className='workItem' onClick={(event) => handleTileClick(item, event)}>
+        <section key={index} className={item.tags.join(' ') + ' workItem'} onClick={(event) => handleTileClick(item, event)}>
           <figure className="squareImage">
             <img src={item.imageUrl} alt={item.title}/>
           </figure>
           <h3 className="not-prose"><strong>{item.title}</strong></h3>
-          <p>{item.description}</p>
+          <p>{item.short_description}</p>
           
           {item.link && (
             <a href={item.link} target="_blank" rel="noreferrer">
@@ -50,17 +77,11 @@ const Works = () => {
           )}
         </section>
       ))}
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} markdownString={selectedItem && selectedItem.long_description}>
+      </Modal>
       </div>
     </article>
-    <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-      {selectedItem && (
-        <div className="modal-body">
-          <h2>{selectedItem.title}</h2>
-          <div dangerouslySetInnerHTML={{ __html: selectedItem.iframe }} />
-          <p>{selectedItem.description}</p>
-        </div>
-      )}
-    </Modal>
+    
   </>
   );
 };

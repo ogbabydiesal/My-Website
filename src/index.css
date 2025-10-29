@@ -16,6 +16,7 @@
   html {
     @apply antialiased;
   }
+
   mux-player {
     --seek-backward-button:none;
     --seek-forward-button:none;
@@ -26,8 +27,8 @@
     display:flex;
     flex-wrap:wrap;
     gap:1rem;
-    
   }
+
   .workItem {
     cursor:pointer;
     font-size: 1rem;
@@ -40,31 +41,101 @@
     box-shadow: 2px 2px 6px rgba(0,0, 0,0.1);
     transition: transform 0.2s, box-shadow 0.2s;
   }
+
   .workItem:hover {
     transform: translateY(-4px);
     box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
   }
-  h3{
+
+  h3 {
     padding:0px;
     margin:0px;
     font-family: 'Tomasa', serif;
   }
 
+  .modal-parent {
+    position: relative;
+    /* ensure the overlay is confined to this parent */
+  }
+
+  /* higher specificity than .modal-overlay alone so it takes precedence
+     and places the overlay relative to .modal-parent instead of the viewport */
+  .modal-parent .modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    display: flex;
+    z-index: 1000;
+
+    /* allow scrolling when content is long and keep content starting at top */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
   .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(253, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
+    -ms-backdrop-filter: blur(20px);
     display: flex;
-    align-items: center;
-    justify-content: center;
     z-index: 1000;
+
+    /* enable scrolling for long modal content */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    align-items: flex-start; /* start at top so long content can scroll naturally */
+    justify-content: center;
+    padding: 2rem 1rem;
+  } 
+
+  /* ensure modal inner content can't exceed viewport height and becomes scrollable */
+  .modal-overlay .modal-content,
+  .modal-parent .modal-overlay .modal-content,
+  .modal-overlay .modal,
+  .modal-parent .modal-overlay .modal {
+    max-height: calc(100vh - 4rem);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+
+  .tag-button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 0px 4px;
+    margin: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .tag-button:hover {
+    background-color: #d0d0d0;
+    padding:0px 4px;
+    
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .tag-button:active {
+    background-color: #f60000;
+  }
+
+  .tag-button.selected {
+    background-color: #f60000;
+    color: white;
   }
   
 }
-
 @layer components {
   .wrapper {
     @apply rounded-[35px] border border-black p-6 lg:p-8 overflow-y-scroll scrollbar scrollbar-thumb-gray scrollbar-thin touch-auto;
@@ -77,4 +148,4 @@
   .bg-roundy {
     @apply rounded-[35px]
   }
-}
+} 
