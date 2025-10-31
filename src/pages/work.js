@@ -52,7 +52,7 @@ const Works = () => {
               const items = container.getElementsByClassName('workItem');
               for (let i = 0; i < items.length; i++) {
                 const item = items[i];
-                if (tag === 'All' || item.classList.contains(tag)) {
+                if (tag === 'all' || item.classList.contains(tag)) {
                   item.style.display = 'block';
                 } else {
                   item.style.display = 'none';
