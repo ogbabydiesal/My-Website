@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React  from 'react';
 import Navlinks from "./components/nav"
 import Home from "./pages/home"
-import Music from "./pages/music"
+import Works from "./pages/work"
 import Sculpture from "./pages/sculpture"
 import Webwork from "./pages/webwork"
 import Software from "./pages/software"
@@ -49,18 +49,10 @@ function App() {
               prose-figure:space-y-4
               prose-video:aspect-video
               prose-a:italic
-              hover:prose-a:text-blue">
+              hover:prose-a:text-blue" style={{maxWidth: 'none'}}>
             <Routes>
               <Route path="/" element={<Home/>} />
-              <Route path='/music' element={<Music/>} />
-              <Route path='/sculpture' element={<Sculpture/>} />
-              <Route path='/webwork' element={<Webwork/>} />
-              <Route path='/veil' element={<Veil/>} />
-              <Route path='/imsys' element={<Imsys/>} />
-              <Route path='/tripleperc' element={<Tripleperc/>} />
-              <Route path='/rtlearner' element={<RTLEARNER/>} />
-              <Route path='/timelayer' element={<Timelayer/>} />
-              <Route path='/software' element={<Software/>} />
+              <Route path='/work' element={<Works/>} />
               <Route path='/curating' element={<Curating/>} />
               <Route path='/systems' element={<Systems/>} />
               <Route path='/devlog' element={<Devlog/>} />

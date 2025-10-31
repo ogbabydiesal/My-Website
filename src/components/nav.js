@@ -17,7 +17,7 @@ function NavigationLink({ link }) {
 function CollapseSection({ section }) {
   const { getCollapseProps, getToggleProps } = useCollapse();
   return (
-    <li activeClassName="active" inactiveClassName="inactive" className="collapsible">
+    <li className="collapsible">
       <div {...getToggleProps()}>{section.title}</div>
       <ul className="text-base lg:text-lg pl-4" {...getCollapseProps()}>
         {section.links.map((link, index) => (
@@ -35,75 +35,8 @@ const Navlinks = () => {
       url: "/" 
     },
     { 
-      name: "Music", 
-      url: "/music" 
-    },
-    { 
-      name: "Sculpture", 
-      url: "/sculpture" 
-    },
-    {
-      title: "Web Based",
-      isCollapsible: true,
-      links: [
-        { 
-          name: "Living Streams", 
-          url: "https://living-streams.vercel.app/", 
-          isExternal: true 
-        },
-        { 
-          name: "Day Cycle", 
-          url: "https://day-cycle.vercel.app/", 
-          isExternal: true 
-        },
-        { 
-          name: "TV Party", 
-          url: "https://tvparty.pro/", 
-          isExternal: true 
-        },
-        { 
-          name: "HTML Speed Study", 
-          url: "https://html-speed-study.glitch.me/", 
-          isExternal: true 
-        },
-        { 
-          name: "Behavioralist", 
-          url: "https://behavioralist.vercel.app/", 
-          isExternal: true 
-        },
-        { 
-          name: "Mesh of Echoes", 
-          url: "https://meshofechoes.com/", 
-          isExternal: true 
-        },
-        
-      ]
-    },
-    {
-      title: "Software",
-      isCollapsible: true,
-      links: [
-        { 
-          name: "IMSYS", 
-          url: "/imsys"
-        },
-        { 
-          name: "Veil", 
-          url: "/veil" 
-        },
-        { 
-          name: "Triple Perc", 
-          url: "/tripleperc" 
-        },
-        { 
-          name: "RTLEARNER", 
-          url: "/rtlearner" 
-        },
-        { 
-          name: "Time Layer", 
-          url: "/timelayer" 
-        },
-      ]
+      name: "Work", 
+      url: "/work" 
     },
     { 
       name: "Curating", 
