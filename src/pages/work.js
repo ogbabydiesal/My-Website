@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Modal from '../components/modal';
+const API_URL = process.env.REACT_APP_BACKEND_API_URL || 'http://localhost:8000';
 
 const Works = () => {
   const [work, setWork] = useState([]);
@@ -9,7 +10,7 @@ const Works = () => {
   const [selectedItem, setSelectedItem] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/work')
+    fetch(`${API_URL}/api/work`)
       .then(res => res.json())
       .then(data => {
         setWork(data.work);
@@ -81,7 +82,6 @@ const Works = () => {
       </Modal>
       </div>
     </article>
-    
   </>
   );
 };
