@@ -127,11 +127,11 @@
     transition: background-color 0.3s;
   }
   .tag-button:active {
-    background-color: #f60000;
+    background-color: #c0c0c0;
   }
 
   .tag-button.selected {
-    background-color: #f60000;
+    background-color: #c0c0c0;
     color: white;
   }
   

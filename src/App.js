@@ -53,14 +53,6 @@ function App() {
             <Routes>
               <Route path="/" element={<Home/>} />
               <Route path='/work' element={<Works/>} />
-              <Route path='/sculpture' element={<Sculpture/>} />
-              <Route path='/webwork' element={<Webwork/>} />
-              <Route path='/veil' element={<Veil/>} />
-              <Route path='/imsys' element={<Imsys/>} />
-              <Route path='/tripleperc' element={<Tripleperc/>} />
-              <Route path='/rtlearner' element={<RTLEARNER/>} />
-              <Route path='/timelayer' element={<Timelayer/>} />
-              <Route path='/software' element={<Software/>} />
               <Route path='/curating' element={<Curating/>} />
               <Route path='/systems' element={<Systems/>} />
               <Route path='/devlog' element={<Devlog/>} />

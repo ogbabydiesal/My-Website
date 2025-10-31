@@ -31,7 +31,8 @@ const Works = () => {
     setIsModalOpen(true);
   };
 
-   const allTags = [];
+  const allTags = [];
+  allTags.push('all');
   work.forEach(item => {
     item.tags.forEach(tag => {
       if (!allTags.includes(tag)) {
@@ -44,7 +45,7 @@ const Works = () => {
     <>
     <article>
       <div className='tags'>
-        <span>Filter by Tag: </span>
+        <span>view by tag: </span>
         { allTags.map(tag => (
             <button key={tag} className="tag-button" onClick={() => {
               const container = document.getElementById('workContainer');
