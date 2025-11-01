@@ -93,11 +93,12 @@
     z-index: 1000;
 
     /* enable scrolling for long modal content */
-    overflow-y: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     align-items: flex-start; /* start at top so long content can scroll naturally */
-    justify-content: center;
+    justify-content: left;
     padding: 2rem 1rem;
+    
   } 
 
   /* ensure modal inner content can't exceed viewport height and becomes scrollable */
@@ -108,8 +109,13 @@
     max-height: calc(100vh - 4rem);
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    width: 100%;
+    width: 75%;
+    
   }
+  img {
+      max-width: 75%;
+      height: auto;
+    }
 
   .tag-button {
     background-color: #e0e0e0;
@@ -136,6 +142,20 @@
   }
   
 }
+
+@media (max-width: 800px) {
+  .modal-overlay .modal-content,
+  .modal-parent .modal-overlay .modal-content,
+  .modal-overlay .modal,
+  .modal-parent .modal-overlay .modal {
+    width: 100%;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 @layer components {
   .wrapper {
     @apply rounded-[35px] border border-black p-6 lg:p-8 overflow-y-scroll scrollbar scrollbar-thumb-gray scrollbar-thin touch-auto;
