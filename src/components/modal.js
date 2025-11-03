@@ -8,7 +8,7 @@ function Modal({ isOpen, onClose, markdownString }) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>[close - x]</button>
-        <Markdown remarkPlugins={[remarkYoutube]}>{markdownString}</Markdown>
+        <Markdown remarkPlugins={[remarkYoutube, { width: '100vw'}]}>{markdownString}</Markdown>
       </div>
     </div>
   );
