@@ -31,8 +31,7 @@ const Works = () => {
     setIsModalOpen(true);
   };
 
-  const allTags = [];
-  allTags.push('all');
+  const allTags = ['all'];
   work.forEach(item => {
     item.tags.forEach(tag => {
       if (!allTags.includes(tag)) {

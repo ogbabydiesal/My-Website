@@ -26,17 +26,21 @@
     width: 100%;
     display:flex;
     flex-wrap:wrap;
-    gap:1rem;
+    justify-content: space-around;
+  }
+  
+  img {
+    border-radius:8px;
   }
 
   .workItem {
     cursor:pointer;
     font-size: 1rem;
     background-color: #f3f3f3;
-    margin:8px;
+    margin-top:8px;
     padding: 8px;
-    min-width: 250px;
-    max-width:250px;
+    min-width: 150px;
+    max-width: 250px;
     border-radius:8px;
     box-shadow: 2px 2px 6px rgba(0,0, 0,0.1);
     transition: transform 0.2s, box-shadow 0.2s;
@@ -97,8 +101,7 @@
     -webkit-overflow-scrolling: touch;
     align-items: flex-start; /* start at top so long content can scroll naturally */
     justify-content: center;
-    padding: 2rem 1rem;
-    
+    padding: 2rem 1rem;  
   } 
 
   /* ensure modal inner content can't exceed viewport height and becomes scrollable */
@@ -110,7 +113,9 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     width: 75%;
-    img {
+    
+    image {
+      border-radius: 12px;
       max-width: 75%;
       height: auto;
     }
@@ -120,14 +125,15 @@
   .tag-button {
     background-color: #e0e0e0;
     border: none;
-    padding: 0px 4px;
+    padding: 0px 8px;
     margin: 2px;
     cursor: pointer;
+    border-radius: 25px;
     transition: background-color 0.3s;
   }
   .tag-button:hover {
     background-color: #d0d0d0;
-    padding:0px 4px;
+    
     
     cursor: pointer;
     transition: background-color 0.3s;
@@ -150,11 +156,16 @@
   .modal-parent .modal-overlay .modal {
     width: 100%;
   }
+  
   img {
     max-width: 100%;
     height: auto;
     justify-content: center;
     align-items: center;
+  }
+
+  .workItem {
+    min-width: 100%;
   }
 }
 
