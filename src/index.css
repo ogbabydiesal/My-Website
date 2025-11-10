@@ -21,6 +21,13 @@
     --seek-backward-button:none;
     --seek-forward-button:none;
   }
+
+  #cardContainer {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
  
   #workContainer {
     width: 100%;
@@ -28,33 +35,39 @@
     flex-wrap:wrap;
     justify-content: space-around;
   }
-  
+
   img {
-    border-radius:8px;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+
   }
 
   .workItem {
     cursor:pointer;
     font-size: 1rem;
-    background-color: #f3f3f3;
+    background-color: transparent;
     margin-top:8px;
     padding: 8px;
-    min-width: 150px;
+    min-width: 250px;
     max-width: 250px;
-    border-radius:8px;
-    box-shadow: 2px 2px 6px rgba(0,0, 0,0.1);
+    min-height:250px;
+    border-style: solid;
+    border-width: 1px;
     transition: transform 0.2s, box-shadow 0.2s;
   }
 
   .workItem:hover {
-    transform: translateY(-4px);
-    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    
   }
 
   h3 {
     padding:0px;
-    margin:0px;
-    font-family: 'Tomasa', serif;
+    margin-top:0px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: light;
   }
 
   .modal-parent {
@@ -102,7 +115,8 @@
     align-items: flex-start; /* start at top so long content can scroll naturally */
     justify-content: center;
     padding: 2rem 1rem;  
-  } 
+  }
+
 
   /* ensure modal inner content can't exceed viewport height and becomes scrollable */
   .modal-overlay .modal-content,
@@ -113,14 +127,13 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     width: 75%;
-    
-    image {
-      border-radius: 12px;
+    img {
       max-width: 75%;
       height: auto;
+      
     }
+    
   }
-  
 
   .tag-button {
     background-color: #e0e0e0;
@@ -146,6 +159,12 @@
     background-color: #c0c0c0;
     color: white;
   }
+
+  .squareImage {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+   
+  }
   
 }
 
@@ -155,19 +174,24 @@
   .modal-overlay .modal,
   .modal-parent .modal-overlay .modal {
     width: 100%;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
+
+    img {
+      max-width: 100%;
+      border-radius: 0px;
+    }
   }
 
+  img {
+    width:100%;
+    max-width: 100%;
+  }
+  
   .workItem {
     min-width: 100%;
+
   }
 }
+
 
 @layer components {
   .wrapper {
