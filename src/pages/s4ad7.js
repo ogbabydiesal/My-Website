@@ -29,7 +29,7 @@ const S4AD7 = () =>{
       </figure>
       <p><a href="https://pioneerworks.org/programs/software-for-artists-day-7" target="_blank" rel="noreferrer">S4AD Website</a></p>
       <p>Curated by myself and presented by <a target="_blank" rel="noreferrer" href="https://www.pioneerworks.org">Pioneer Works</a></p>   
-      <p>Featuring presentations by LD Deutsch, Mindy Seu, Jace Clayton, Brian Droitcour, Steve Pikelny, Ruby Justice Thelot and Libby Marrs. With music by Pent, Gobby, and Bergsonist. In collaboration with <a href="https://www.ninaprotocol.com/" target="_blank" referrer="noreferrer">Nina Protocol</a>.</p>
+      <p>Featuring presentations by LD Deutsch, Mindy Seu, Jace Clayton, Brian Droitcour, Steve Pikelny, Ruby Justice Thelot and Libby Marrs. With music by Pent, Gobby, and Bergsonist. In collaboration with <a href="https://www.ninaprotocol.com/" target="_blank" rel="noreferrer">Nina Protocol</a>.</p>
     </Collapse>
       </>
   );
