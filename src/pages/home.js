@@ -1,10 +1,8 @@
-import React from 'react';
 const Home = () =>{
   return (
     <article>
-      <h1>Welcome</h1>
       <figure>
-        <img src={require('../images/blueBox.png')} alt="" />
+        <img src="https://d2w9rnfcy7mm78.cloudfront.net/28523803/original_eeed5bd7fff812ca754abddc3f8c1710.gif?1717512751?bc=0" alt="spectral-fantasy" />
       </figure>
       <p>hello, welcome to my website.</p>
       <p>I'm and artist and programmer mostly working through research, sound and code. I create software and musical systems for the internet, embedded devices, and for live multichannel performance. I'm currently an adjunct professor at NYU's Interactive Telecommunications Program (ITP) and the Integrated Design & Media (IDM) program where I teach courses in electronic art.</p>

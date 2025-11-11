@@ -65,9 +65,12 @@ const Works = () => {
       <div id='workContainer'>
       {work.map((item, index) => (
         <section key={index} className={item.tags.join(' ') + ' workItem'} onClick={(event) => handleTileClick(item, event)}>
-          <figure className="squareImage">
-            <img src={item.imageUrl} alt={item.title}/>
-          </figure>
+          <div id='cardContainer' className="overlay">
+            <figure className="squareImage">
+              <img src={item.imageUrl} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}/>
+            </figure>
+          </div>
+          
           <h3 className="not-prose"><strong>{item.title}</strong></h3>
           <p>{item.short_description}</p>
           

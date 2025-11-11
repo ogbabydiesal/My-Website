@@ -1,17 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import React  from 'react';
 import Navlinks from "./components/nav"
 import Home from "./pages/home"
 import Works from "./pages/work"
-import Sculpture from "./pages/sculpture"
-import Webwork from "./pages/webwork"
-import Software from "./pages/software"
-import Imsys from "./pages/imsys"
-import Veil from "./pages/veil"
-import RTLEARNER from "./pages/rtlearner"
-import Devlog from "./pages/devlog"
-import Tripleperc from "./pages/tripleperc"
-import Timelayer from "./pages/timelayer"
 import Curating from "./pages/curating"
 import Systems from "./pages/systems"
 import { Analytics } from '@vercel/analytics/react';
@@ -55,7 +45,6 @@ function App() {
               <Route path='/work' element={<Works/>} />
               <Route path='/curating' element={<Curating/>} />
               <Route path='/systems' element={<Systems/>} />
-              <Route path='/devlog' element={<Devlog/>} />
             </Routes>
             </div>
           </div>
