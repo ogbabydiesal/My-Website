@@ -48,6 +48,11 @@ const Works = () => {
         <span>view by tag: </span>
         { allTags.map(tag => (
             <button key={tag} className="tag-button" onClick={() => {
+              //toggle selected class below
+              const buttons = document.querySelectorAll('.tags .tag-button');
+              buttons.forEach(btn => {
+                btn.classList.toggle('selected', btn.textContent.trim() === tag);
+              });
               const container = document.getElementById('workContainer');
               const items = container.getElementsByClassName('workItem');
               for (let i = 0; i < items.length; i++) {

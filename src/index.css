@@ -63,6 +63,11 @@
     
   }
 
+  .selected {
+    border-color: black;
+    border-width: 2px;
+  }
+
   h3 {
     padding:0px;
     margin-top:0px;

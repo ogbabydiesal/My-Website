@@ -47,6 +47,20 @@ const Works = () => {
         <span>view by tag: </span>
         { allTags.map(tag => (
             <button key={tag} className="tag-button" onClick={() => {
+              //toggle selected class below
+              const buttons = document.querySelectorAll('.tag-button');
+              let clickedBtn = null;
+              buttons.forEach(btn => {
+                if (btn.textContent.trim() === tag) clickedBtn = btn;
+              });
+              if (clickedBtn) {
+                if (clickedBtn.classList.contains('selected')) {
+                  clickedBtn.classList.remove('selected');
+                } else {  
+                  buttons.forEach(b => b.classList.remove('selected'));
+                  clickedBtn.classList.add('selected');
+                }
+              }
               const container = document.getElementById('workContainer');
               const items = container.getElementsByClassName('workItem');
               for (let i = 0; i < items.length; i++) {
