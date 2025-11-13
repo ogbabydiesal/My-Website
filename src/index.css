@@ -63,11 +63,6 @@
     
   }
 
-  .selected {
-    border-color: black;
-    border-width: 2px;
-  }
-
   h3 {
     padding:0px;
     margin-top:0px;
@@ -161,8 +156,8 @@
   }
 
   .tag-button.selected {
-    background-color: #c0c0c0;
-    color: white;
+    background-color: aquamarine;
+    color: black;
   }
 
   .squareImage {
