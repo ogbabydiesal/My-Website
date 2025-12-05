@@ -41,7 +41,6 @@
     height:100%;
     object-fit: cover;
     object-position: center;
-
   }
 
   .workItem {
@@ -87,7 +86,6 @@
     backdrop-filter: blur(20px);
     display: flex;
     z-index: 1000;
-
     /* allow scrolling when content is long and keep content starting at top */
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -95,6 +93,7 @@
     justify-content: center;
     padding: 2rem 1rem;
   }
+
   .modal-overlay {
     position: fixed;
     top: 0;
@@ -108,7 +107,6 @@
     -ms-backdrop-filter: blur(20px);
     display: flex;
     z-index: 1000;
-
     /* enable scrolling for long modal content */
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
@@ -116,7 +114,6 @@
     justify-content: center;
     padding: 2rem 1rem;  
   }
-
 
   /* ensure modal inner content can't exceed viewport height and becomes scrollable */
   .modal-overlay .modal-content,
@@ -130,9 +127,7 @@
     img {
       max-width: 75%;
       height: auto;
-      
     }
-    
   }
 
   .tag-button {
