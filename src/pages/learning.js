@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Modal from '../components/modal';
-const API_URL = process.env.REACT_APP_BACKEND_API_URL || 'http://localhost:8000' || process.env.REACT_APP_BACKEND_API_URL;
+const API_URL = process.env.REACT_APP_BACKEND_API_URL || 'http://localhost:8000';
 
 const Works = () => {
   const [work, setWork] = useState([]);
@@ -10,7 +10,7 @@ const Works = () => {
   const [selectedItem, setSelectedItem] = useState(null);
 
   useEffect(() => {
-    fetch(`${API_URL}/api/systems`)
+    fetch(`${API_URL}/api/organizing`)
       .then(res => res.json())
       .then(data => {
         console.log(data);
@@ -44,9 +44,6 @@ const Works = () => {
   return (
     <>
     <article>
-      <div className='page-intro'>
-        <p>Below are some of the projects I've worked on as an engineer or consultant. Many of these projects were completed as an instructor at Harvestworks, and later as the Director of Technology at Pioneer Works. Use the tags below to filter by project type.</p>
-      </div>
       <div className='tags'>
         <span>view by tag: </span>
         { allTags.map(tag => (

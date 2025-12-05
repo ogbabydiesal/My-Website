@@ -3,7 +3,7 @@ import useCollapse from "react-collapsed";
 
 function NavigationLink({ link }) {
   return (
-    <li className="text-black hover:text-blue ">
+    <li>
       {link.isExternal ? (
         <a target="_blank" rel="noreferrer" href={link.url}>{link.name}</a>
       ) : (
@@ -38,28 +38,17 @@ const Navlinks = () => {
       url: "/work" 
     },
     { 
-      name: "Curating", 
-      url: "/curating" 
+      name: "Learning", 
+      url: "/learning" 
     },
     { 
       name: "Systems", 
       url: "/systems" 
     },
-    { 
-      name: "github", 
-      url: "https://github.com/ogbabydiesal", 
-      isExternal: true 
-    },
-    { 
-      name: "instagram", 
-      url: "https://www.instagram.com/ogbabydiesal/", 
-      isExternal: true 
-    },
-    { 
-      name: "twitter", 
-      url: "https://twitter.com/ogbabydiesal", 
-      isExternal: true 
-    },
+    {
+      name: "Connect",
+      url: "/connect"
+    }
   ];
 
   return (

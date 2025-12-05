@@ -2,8 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navlinks from "./components/nav"
 import Home from "./pages/home"
 import Works from "./pages/work"
-import Curating from "./pages/curating"
+//import Curating from "./pages/curating"
+import Learning from "./pages/learning"
 import Systems from "./pages/systems"
+import Connect from "./pages/connect"
 import { Analytics } from '@vercel/analytics/react';
 
 function App() {
@@ -43,8 +45,9 @@ function App() {
             <Routes>
               <Route path="/" element={<Home/>} />
               <Route path='/work' element={<Works/>} />
-              <Route path='/curating' element={<Curating/>} />
+              <Route path='/learning' element={<Learning/>} />
               <Route path='/systems' element={<Systems/>} />
+              <Route path='/connect' element={<Connect/>} />
             </Routes>
             </div>
           </div>
